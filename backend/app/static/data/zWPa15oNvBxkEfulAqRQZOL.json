@@ -1,0 +1,38 @@
+{
+  "Nutrition": {
+    "en_pillar_name": "Nutrition",
+    "ar_pillar_name": "التغذية",
+    "questions": [
+      { "en": "I eat a balanced diet daily.", "ar": "أنا أتناول نظامًا غذائيًا متوازنًا يوميًا." },
+      { "en": "I drink at least 2 liters of water daily.", "ar": "أشرب ما لا يقل عن 2 لتر من الماء يوميًا." },
+      { "en": "I limit my sugar intake.", "ar": "أحد من استهلاكي للسكر." }
+    ]
+  },
+  "Relationships": {
+    "en_pillar_name": "Relationships",
+    "ar_pillar_name": "العلاقات",
+    "questions": [
+      { "en": "I feel supported by my family.", "ar": "أشعر بالدعم من عائلتي." },
+      { "en": "I have strong friendships.", "ar": "لدي صداقات قوية." },
+      { "en": "I express my feelings openly.", "ar": "أعبر عن مشاعري بصراحة." }
+    ]
+  },
+  "Movement & Exercise": {
+    "en_pillar_name": "Movement & Exercise",
+    "ar_pillar_name": "الحركة والتمارين",
+    "questions": [
+      { "en": "I exercise at least 3 times a week.", "ar": "أمارس الرياضة 3 مرات في الأسبوع على الأقل." },
+      { "en": "I include stretching in my routine.", "ar": "أقوم بتمارين التمدد في روتيني." },
+      { "en": "I engage in physical activities I enjoy.", "ar": "أشارك في أنشطة بدنية أستمتع بها." }
+    ]
+  },
+  "Sleep & Recovery": {
+    "en_pillar_name": "Sleep & Recovery",
+    "ar_pillar_name": "النوم والتعافي",
+    "questions": [
+      { "en": "I sleep at least 7 hours every night.", "ar": "أنام 7 ساعات على الأقل كل ليلة." },
+      { "en": "I wake up feeling refreshed.", "ar": "أستيقظ وأنا أشعر بالانتعاش." },
+      { "en": "I avoid screens before bed.", "ar": "أتجنب الشاشات قبل النوم." }
+    ]
+  }
+}

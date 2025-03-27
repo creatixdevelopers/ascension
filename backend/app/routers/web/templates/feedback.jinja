@@ -1,0 +1,47 @@
+{% extends './base.jinja' %}
+
+{% block content %}
+	<main class="main">
+      <!-- Feedback Section -->
+      <section id="feedback" class="py-4">
+        <div class="container">
+          <div class="header-container">
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" role="switch" id="languageToggle" onchange="toggleLanguage()" />
+              <label class="form-check-label" for="languageToggle">English / العربية</label>
+            </div>
+          </div>
+
+          <!-- Horizontal Progress Bars -->
+          <h3 class="mb-5 text-center">Progress Overview</h3>
+          <div id="progressBars" class="progress-container"></div>
+
+          <!-- Feedback Section -->
+          <div class="feedback-section">
+            <h3 class="py-5 text-center">Detailed Feedback</h3>
+            <div id="feedbackContent"></div>
+          </div>
+
+          <!-- Progress Tracker Table -->
+          <h3 class="py-5 text-center mt-4">Progress Tracker</h3>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Pillar</th>
+                <th>Current Assessment (out of 5)</th>
+                <th>Priority</th>
+              </tr>
+            </thead>
+            <tbody id="progressTable"></tbody>
+          </table>
+
+          <!-- Call-to-Action Buttons -->
+          <div class="cta-buttons mt-5">
+            <button class="btn btn-primary mx-2 my-2">Book a Call with Arsalan</button>
+            <button class="btn btn-primary mx-2 my-2">Subscribe to the Newsletter</button>
+          </div>
+        </div>
+      </section>
+      <!-- /Feedback Section -->
+    </main>
+{% endblock content %}

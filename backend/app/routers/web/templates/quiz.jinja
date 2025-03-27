@@ -1,0 +1,30 @@
+{% extends './base.jinja' %}
+
+{% block content %}
+	<main class="main">
+		<!-- Questions Section -->
+		<section id="questions" class="py-4">
+			<div class="container">
+				<div class="container mt-4">
+					<div class="header-container">
+						<div class="form-check form-switch">
+							<input class="form-check-input" type="checkbox" role="switch" id="languageToggle"
+										 onchange="toggleLanguage()"/>
+							<label class="form-check-label" for="languageToggle">English / العربية</label>
+						</div>
+					</div>
+
+					<div id="questionnaire">
+						<!-- Sections will be loaded here dynamically -->
+					</div>
+
+					<div class="btn-container mt-4">
+						<button id="prevButton" class="btn btn-secondary" onclick="prevSection()">Previous Pillar</button>
+						<button id="nextButton" class="btn btn-primary" onclick="nextSection()">Next Pillar</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /Questions Section -->
+	</main>
+{% endblock content %}
