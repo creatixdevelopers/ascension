@@ -10,7 +10,6 @@ class UserCreateSchema(Model):
     name: constr(strip_whitespace=True, max_length=128)
     phone: constr(strip_whitespace=True, max_length=16)
     password: Password
-    active: bool
     role: conint(ge=1) | None = None
 
 

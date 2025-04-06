@@ -18,9 +18,7 @@
 								<li class="na">Pharetra massa</li>
 								<li class="na">Massa ultricies mi</li>
 							</ul>
-							<a href="/quiz">
-								<button class="btn btn-primary">Buy Now</button>
-							</a>
+							<button id="one_time" class="payment-btn btn btn-primary">Buy Now</button>
 						</div>
 					</div>
 					<!-- End Pricing Item -->
@@ -36,9 +34,7 @@
 								<li>Pharetra massa</li>
 								<li>Massa ultricies mi</li>
 							</ul>
-							<a href="/quiz">
-								<button class="btn btn-primary">Buy Now</button>
-							</a>
+							<button id="subscription" class="payment-btn btn btn-primary">Buy Now</button>
 						</div>
 					</div>
 					<!-- End Pricing Item -->
@@ -48,3 +44,27 @@
 		<!-- /Pricing Section -->
 	</main>
 {% endblock content %}
+
+{% block scripts %}
+	<script type="application/javascript">
+		$(".payment-btn").on('click', async function (e) {
+			const payment_type = $(this).attr('id');
+			const response = await fetch('/api/payment/checkout', {
+				method: 'POST',
+				headers: {'Content-Type': 'application/json'},
+				body: JSON.stringify({ type: payment_type })
+			});
+			if (!response.ok) {
+				console.error("Failed to fetch payment link", response.statusText);
+				alert("Failed to fetch payment link");
+			}
+			const data = await response.json();
+			if (data.url) {
+				location.href = data.url
+			} else {
+				console.error("Invalid response from server", data);
+				alert("Failed to fetch payment link");
+			}
+		})
+	</script>
+{% endblock %}

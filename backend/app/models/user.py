@@ -1,12 +1,14 @@
+from datetime import datetime
 from typing import List
 
 from passlib.context import CryptContext
-from sqlalchemy import String, Text, Boolean, ForeignKey
+from sqlalchemy import JSON, Boolean, DateTime, ForeignKey, String
 from sqlalchemy.ext.hybrid import hybrid_property
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 from app.utils import generate_uid
-from .base import Base, ModelMixin, CreatedMixin, LastUpdatedMixin
+
+from .base import Base, CreatedMixin, LastUpdatedMixin, ModelMixin
 from .role import Role
 
 password_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
@@ -27,6 +29,7 @@ class User(Base, ModelMixin, CreatedMixin, LastUpdatedMixin):
     role_id: Mapped[int] = mapped_column(ForeignKey("role.id"))
 
     role: Mapped[Role] = relationship("Role", back_populates="users")
+    payments: Mapped[list["Payment"]] = relationship(back_populates="user")
     responses: Mapped[list["Response"]] = relationship(back_populates="user")
 
     @property
@@ -47,3 +50,15 @@ class User(Base, ModelMixin, CreatedMixin, LastUpdatedMixin):
     @hybrid_property
     def scopes(self) -> List[str]:
         return [p.name for p in self.role.permissions]
+
+
+class Payment(Base, ModelMixin, CreatedMixin):
+    user_id: Mapped[int] = mapped_column(
+        ForeignKey("user.id"), primary_key=True, index=True
+    )
+    payment_id: Mapped[int] = mapped_column(String, primary_key=True)
+    type: Mapped[str] = mapped_column(String(16), nullable=False)
+    data: Mapped[dict] = mapped_column(JSON, nullable=True)
+    valid_until: Mapped[datetime] = mapped_column(DateTime, nullable=True)
+
+    user: Mapped[User] = relationship("User", back_populates="payments")

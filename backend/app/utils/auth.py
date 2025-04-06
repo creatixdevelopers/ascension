@@ -1,4 +1,4 @@
-from datetime import datetime, timezone, timedelta
+from datetime import datetime, timedelta, timezone
 
 import jwt
 
@@ -25,11 +25,12 @@ def create_jwt(payload: dict, expires_delta: timedelta) -> str:
     return token
 
 
-def create_access_token(user: User, fresh: bool):
+def create_access_token(user: User, fresh: bool = False, exp: int = None):
     """
     Create an access token for the user.
     :param user: The user to create the token for.
     :param fresh: If the access token is fresh
+    :param exp: The expiration time for the token in seconds.
     :return: The access token.
     """
     role = user.role
@@ -41,9 +42,9 @@ def create_access_token(user: User, fresh: bool):
         "role": role.name,
         "scopes": permissions,
     }
-    return create_jwt(
-        payload, expires_delta=timedelta(seconds=settings.access_token_expires)
-    )
+    if not exp:
+        exp = settings.access_token_expires
+    return create_jwt(payload, expires_delta=timedelta(seconds=exp))
 
 
 def create_refresh_token(user: User):

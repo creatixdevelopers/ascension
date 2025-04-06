@@ -2,46 +2,114 @@
 
 {% block content %}
 	<main class="main">
-      <!-- Feedback Section -->
-      <section id="feedback" class="py-4">
-        <div class="container">
-          <div class="header-container">
-            <div class="form-check form-switch">
-              <input class="form-check-input" type="checkbox" role="switch" id="languageToggle" onchange="toggleLanguage()" />
-              <label class="form-check-label" for="languageToggle">English / العربية</label>
-            </div>
-          </div>
+		<!-- Feedback Section -->
+		<section id="feedback" class="py-4">
+			<div class="container">
+				<div class="header-container">
+					<div class="form-check form-switch">
+						<input class="form-check-input" type="checkbox" role="switch" id="languageToggle"
+									 onchange="toggleLanguage()"/>
+						<label class="form-check-label" for="languageToggle">English / العربية</label>
+					</div>
+				</div>
 
-          <!-- Horizontal Progress Bars -->
-          <h3 class="mb-5 text-center">Progress Overview</h3>
-          <div id="progressBars" class="progress-container"></div>
+				<!-- Horizontal Progress Bars -->
+				<h3 class="mb-5 text-center">Progress Overview</h3>
+				<div id="progressBars" class="progress-container"></div>
 
-          <!-- Feedback Section -->
-          <div class="feedback-section">
-            <h3 class="py-5 text-center">Detailed Feedback</h3>
-            <div id="feedbackContent"></div>
-          </div>
+				<!-- Feedback Section -->
+				<div class="feedback-section">
+					<h3 class="py-5 text-center">Detailed Feedback</h3>
+					<div id="feedbackContent"></div>
+				</div>
 
-          <!-- Progress Tracker Table -->
-          <h3 class="py-5 text-center mt-4">Progress Tracker</h3>
-          <table class="table">
-            <thead>
-              <tr>
-                <th>Pillar</th>
-                <th>Current Assessment (out of 5)</th>
-                <th>Priority</th>
-              </tr>
-            </thead>
-            <tbody id="progressTable"></tbody>
-          </table>
+				<!-- Progress Tracker Table -->
+				<h3 class="py-5 text-center mt-4">Progress Tracker</h3>
+				<table class="table">
+					<thead>
+					<tr>
+						<th>Pillar</th>
+						<th>Current Assessment (out of 5)</th>
+						<th>Priority</th>
+					</tr>
+					</thead>
+					<tbody id="progressTable"></tbody>
+				</table>
 
-          <!-- Call-to-Action Buttons -->
-          <div class="cta-buttons mt-5">
-            <button class="btn btn-primary mx-2 my-2">Book a Call with Arsalan</button>
-            <button class="btn btn-primary mx-2 my-2">Subscribe to the Newsletter</button>
-          </div>
-        </div>
-      </section>
-      <!-- /Feedback Section -->
-    </main>
+				<!-- Call-to-Action Buttons -->
+				<div class="cta-buttons mt-5">
+					<button class="btn btn-primary mx-2 my-2">Book a Call with Arsalan</button>
+					<button class="btn btn-primary mx-2 my-2">Subscribe to the Newsletter</button>
+				</div>
+			</div>
+		</section>
+		<!-- /Feedback Section -->
+	</main>
 {% endblock content %}
+
+{% block scripts %}
+	<script type="application/javascript">
+		const quiz_id = "{{ quiz_id }}";
+		const results = {{ results|tojson }};
+		let feedbackData = {};
+
+		// Load feedback data
+		$(document).ready(async function () {
+			const response = await fetch(`/static/data/${quiz_id}/feedback.json`);
+			if (!response.ok) {
+				console.error("Error loading feedback:", response.statusText);
+				return;
+			}
+			feedbackData = await response.json();
+			if (document.getElementById("feedbackContent")) {
+				loadFeedbackPage();
+			}
+		});
+
+		// Load Feedback Page
+		function loadFeedbackPage() {
+			if (!Object.keys(results).length) {
+				console.error("No feedback results found in localStorage.");
+				return;
+			}
+
+			let progressBarsHTML = "";
+			let feedbackHTML = "";
+			let tableHTML = "";
+
+			Object.keys(results).forEach((pillar) => {
+				const data = results[pillar];
+				const averageScore = Math.round((Object.values(data).reduce((acc, score) => acc + score, 0) / Object.values(data).length));
+				const scoreKey = averageScore.toString();
+				const percentage = (averageScore / 5) * 100;
+				const translatedPillar = feedbackData[pillar][`${currentLanguage}_pillar_name`];
+				let feedbackText = feedbackData[pillar] && feedbackData[pillar].feedback[scoreKey] ? feedbackData[pillar].feedback[scoreKey][currentLanguage] : "Feedback not available.";
+
+				progressBarsHTML += `
+        <div class="progress-item">
+            <label>${translatedPillar}</label>
+            <div class="progress">
+                <div class="progress-bar" style="width: ${percentage}%;"></div>
+            </div>
+        </div>`;
+
+				feedbackHTML += `
+        <div class="mt-3">
+            <h5>${translatedPillar}</h5>
+            <p>${feedbackText}</p>
+        </div>`;
+
+				tableHTML += `
+        <tr>
+					<td>${translatedPillar}</td>
+					<td>${averageScore}</td>
+					<td>${averageScore >= 4 ? "Low" : averageScore === 3 ? "Medium" : "High"}</td>
+        </tr>`;
+			});
+
+			document.getElementById("progressBars").innerHTML = `<div class="row">${progressBarsHTML}</div>`;
+			document.getElementById("feedbackContent").innerHTML = feedbackHTML;
+			document.getElementById("progressTable").innerHTML = tableHTML;
+		}
+	</script>
+{% endblock %}

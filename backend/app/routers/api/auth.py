@@ -46,19 +46,42 @@ async def login(data: LoginSchema, db: dbDep, response: Response):
     raise Unauthorized(message="Invalid credentials")
 
 
-@router.post("/signup/", response_model=TokenSchema)
+@router.post("/login-web/", response_model=TokenSchema)
+async def login_web(data: LoginSchema, db: dbDep, response: Response):
+    user: User = User.get_by(db=db, first=True, email=data.email)
+    if user and user.verify_password(data.password):
+        if not user.active:
+            raise Forbidden(message="Account deactivated, please contact support")
+
+        access_token = create_access_token(
+            user=user, fresh=True, exp=settings.web_access_token_expires
+        )
+        response.set_cookie(
+            key="access_token",
+            value=access_token,
+            httponly=True,
+            samesite="strict",
+            max_age=settings.web_access_token_expires + 60,
+            secure=settings.is_prod,
+        )
+
+        return {"token": access_token, "token_type": "bearer"}
+    raise Unauthorized(message="Invalid credentials")
+
+
+@router.post("/signup/")
 async def signup(data: UserCreateSchema, db: dbDep):
-    role = Role.get_by(db=db, name="user")
+    role = Role.get_by(db=db, first=True, name="user")
     if role:
-        user = User.create(
+        User.create(
             db=db,
             email=data.email,
             name=data.name,
             phone=data.phone,
             password=data.password,
-            verifies=True,
+            verified=True,
             active=True,
-            role=role,
+            role_id=role.id,
         )
         db.commit()
         return {"status": True, "message": "Successfully created account"}

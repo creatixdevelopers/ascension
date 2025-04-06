@@ -30,30 +30,33 @@
 								<div class="row gy-3 overflow-hidden">
 									<div class="col-12">
 										<div class="form-floating mb-3">
-											<input type="text" class="form-control" name="full_name" id="full_name" placeholder="Full Name"
-														 required/>
+											<input type="text" class="form-control" name="full_name" id="full_name" required/>
 											<label for="full_name" class="form-label">Full Name</label>
 										</div>
 									</div>
 									<div class="col-12">
 										<div class="form-floating mb-3">
-											<input type="email" class="form-control" name="email" id="email" placeholder="name@example.com"
-														 required/>
+											<input type="email" class="form-control" name="email" id="email" required/>
 											<label for="email" class="form-label">Email</label>
 										</div>
 									</div>
 									<div class="col-12">
 										<div class="form-floating mb-3">
-											<input type="email" class="form-control" name="phone" id="phone" placeholder="9999999999"
-														 required/>
-											<label for="email" class="form-label">Phone Number</label>
+											<input type="text" class="form-control" name="phone" id="phone" required/>
+											<label for="phone" class="form-label">Phone Number</label>
 										</div>
 									</div>
 									<div class="col-12">
 										<div class="form-floating mb-3">
-											<input type="password" class="form-control" name="password" id="password" placeholder="Password"
-														 required/>
+											<input type="password" class="form-control" name="password" id="password" required/>
 											<label for="password" class="form-label">Password</label>
+										</div>
+									</div>
+									<div class="col-12">
+										<div class="form-floating mb-3">
+											<input type="password" class="form-control" name="confirm_password" id="confirm_password"
+														 required/>
+											<label for="confirm_password" class="form-label">Confirm Password</label>
 										</div>
 									</div>
 									<div class="col-12">
@@ -68,6 +71,12 @@
 										</div>
 									</div>
 									<div class="col-12">
+										<div class="alert alert-danger d-none" id="errorMessage" role="alert"></div>
+									</div>
+									<div class="col-12">
+										<div class="alert alert-success d-none" id="successMessage" role="alert"></div>
+									</div>
+									<div class="col-12">
 										<div class="d-grid">
 											<button class="btn btn-primary btn-lg" type="submit">Sign Up</button>
 										</div>
@@ -80,4 +89,54 @@
 			</div>
 		</div>
 	</section>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+			const form = $('form');
+			const errorMessage = $('#errorMessage');
+			const successMessage = $('#successMessage');
+
+			form.on('submit', async (e) => {
+				e.preventDefault();
+				errorMessage.addClass("d-none");
+				successMessage.addClass("d-none");
+
+				const fullName = $('#full_name').val().trim();
+				const email = $('#email').val().trim();
+				const phone = $('#phone').val().trim();
+				const password = $('#password').val().trim();
+				const confirmPassword = $('#confirm_password').val().trim();
+
+				if (password.length < 8) {
+					errorMessage.text("Password must be at least 8 characters long.").removeClass('d-none');
+					return;
+				}
+
+				if (password !== confirmPassword) {
+					errorMessage.text("Passwords do not match.").removeClass('d-none');
+					return;
+				}
+
+				const data = {name: fullName, email: email, phone: phone, password: password};
+				try {
+					const response = await fetch("/api/auth/signup/",
+						{
+							method: "POST",
+							headers: {"Content-Type": "application/json"},
+							body: JSON.stringify(data)
+						});
+					const json = await response.json();
+					if (!response.ok) {
+						errorMessage.text(json.message || 'Signup failed. Please contact support.').removeClass('d-none');
+						return
+					}
+					successMessage.text("Signup successful! You may login now").removeClass('d-none');
+					form.trigger('reset');
+				} catch (error) {
+					console.error('Error:', error);
+					errorMessage.text('An error occurred during login. Please try again.').removeClass('d-none');
+				}
+			});
+		});
+	</script>
 {% endblock content %}

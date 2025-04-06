@@ -28,3 +28,160 @@
 		<!-- /Questions Section -->
 	</main>
 {% endblock content %}
+
+{% block scripts %}
+	<script type="application/javascript">
+		const quiz_id = "{{ quiz_id }}";
+		let question = {};
+		let sections = {};
+
+		let currentSectionIndex = 0;
+		const options = {
+			en: ["Strongly Disagree", "Disagree", "Somewhat Agree", "Agree", "Strongly Agree"],
+			ar: ["أعارض بشدة", "أعارض", "أوافق جزئيًا", "أوافق", "أوافق بشدة"],
+		};
+
+		// Load questions
+		$(document).ready(async function () {
+			const response = await fetch(`/static/data/${quiz_id}/questions.json`);
+			if (!response.ok) {
+				console.error("Error loading questions:", response.statusText);
+				return;
+			}
+			question = await response.json();
+			sections = {
+				en: Object.keys(question),
+				ar: Object.keys(question).map((key) => question[key].ar_pillar_name),
+			};
+			loadSection();
+		});
+
+		// Load the Current Section for Questions Page
+		function loadSection() {
+			const sectionKey = sections.en[currentSectionIndex];
+			const sectionName = question[sectionKey][`${currentLanguage}_pillar_name`];
+			const questions = question[sectionKey].questions || [];
+
+			let html = `<h3 class="text-center">${currentLanguage === "en" ? "Pillar:" : "الركيزة:"} ${sectionName}</h3>`;
+
+			if (questions.length === 0) {
+				console.error(`No questions found for: ${sectionKey}`, question);
+				html += `<p style="color:red;">⚠ No questions available for this section.</p>`;
+			}
+
+			let storedData = JSON.parse(localStorage.getItem(quiz_id)) || {};
+			let answers = storedData[sectionKey] || {};
+
+			questions.forEach((q, index) => {
+				const storedValue = answers[index] || "";
+
+				html += `
+        <div class="question-card">
+        	<p class="question">${q[currentLanguage]}</p>
+        <div class="options-group">`;
+
+				options[currentLanguage].forEach((option, i) => {
+					const isChecked = storedValue === i.toString() ? "checked" : "";
+					html += `
+					<div class="form-check">
+						<input class="form-check-input" type="radio" name="q${index}" id="q${index}_${i}" value="${i}" ${isChecked} onchange="saveResponse('${sectionKey}', ${index}, this.value)">
+						<label class="form-check-label" for="q${index}_${i}">
+							${option}
+						</label>
+					</div>`;
+				});
+
+				html += `</div></div>`;
+			});
+
+			if (currentSectionIndex === sections.en.length - 1) {
+				html += `
+				<div class="btn-container mt-4">
+					<button class="btn btn-primary" onclick="calculateAndSubmit()">Submit All Answers</button>
+				</div>`;
+			}
+
+			$("#questionnaire").html(html);
+
+			// Update Navigation Buttons
+			$("#prevButton").toggle(currentSectionIndex > 0);
+			$("#nextButton").toggle(currentSectionIndex < sections.en.length - 1);
+
+			scrollToTop();
+		}
+
+		// Validate Before Navigating
+		function validateSection() {
+			const radioGroupNames = new Set();
+			$("#questionnaire").find('input[type="radio"]').each(function () {
+				radioGroupNames.add($(this).attr('name'));
+			});
+
+			// Check if each group has a checked radio
+			let allChecked = true;
+			radioGroupNames.forEach(function (groupName) {
+				let checked = $("#questionnaire" + ' input[name="' + groupName + '"]:checked').length > 0;
+				if (!checked) {
+					allChecked = false;
+					return
+				}
+			});
+
+			if (!allChecked) {
+				alert(currentLanguage === "en" ? "Please answer all questions before moving to the next section." : "يرجى الإجابة على جميع الأسئلة قبل الانتقال إلى القسم التالي.");
+				return false;
+			}
+			return true;
+		}
+
+		// Save Response To Local Storage
+		function saveResponse(section, index, value) {
+			let storedData = JSON.parse(localStorage.getItem(quiz_id)) || {};
+
+			if (!storedData[section]) {
+				storedData[section] = {};
+			}
+
+			storedData[section][index] = value;
+			localStorage.setItem(quiz_id, JSON.stringify(storedData));
+		}
+
+		// Navigate to Next Section
+		function nextSection() {
+			if (currentSectionIndex < sections.en.length - 1) {
+				if (!validateSection()) return;
+				currentSectionIndex++;
+				loadSection();
+			}
+		}
+
+		// Navigate to Previous Section
+		function prevSection() {
+			if (currentSectionIndex > 0) {
+				if (!validateSection()) return;
+				currentSectionIndex--;
+				loadSection();
+			}
+		}
+
+		// Calculate Scores & Generate Feedback Page
+		async function calculateAndSubmit() {
+			let storedData = JSON.parse(localStorage.getItem(quiz_id)) || {};
+
+			// Submit to backend
+			const response = await fetch(`/api/quiz/response`, {
+				method: "PUT",
+				headers: {"Content-Type": "application/json"},
+				body: JSON.stringify({
+					quiz_id: quiz_id,
+					responses: storedData,
+				}),
+			});
+			if (!response.ok) {
+				alert(currentLanguage === "en" ? "Submission failed. Please try again." : "فشل الإرسال. يرجى المحاولة مرة أخرى.");
+				return;
+			}
+			{#window.location.href = "/feedback";#}
+		}
+	</script>
+{% endblock scripts %}

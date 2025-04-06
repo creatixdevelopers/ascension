@@ -1,0 +1,106 @@
+{
+  "Nutrition": {
+    "en_pillar_name": "Nutrition",
+    "ar_pillar_name": "التغذية",
+    "feedback": {
+      "1": {
+        "en": "Your nutrition habits need significant improvement. Consider consulting a nutritionist.",
+        "ar": "تحتاج عاداتك الغذائية إلى تحسين كبير. فكر في استشارة أخصائي تغذية."
+      },
+      "2": {
+        "en": "You're making some effort, but your diet still requires attention to improve your health.",
+        "ar": "تبذل بعض الجهد، ولكن لا يزال نظامك الغذائي بحاجة إلى اهتمام لتحسين صحتك."
+      },
+      "3": {
+        "en": "Your nutrition is balanced, but there's room for improvement with better meal planning.",
+        "ar": "تغذيتك متوازنة، ولكن هناك مجال للتحسين مع تخطيط وجبات أفضل."
+      },
+      "4": {
+        "en": "Great job! Your nutrition is in a good place. Maintain consistency in your healthy eating.",
+        "ar": "عمل رائع! تغذيتك في حالة جيدة. حافظ على الاستمرارية في تناول الطعام الصحي."
+      },
+      "5": {
+        "en": "Excellent! You have mastered a well-balanced diet. Keep up the great work!",
+        "ar": "ممتاز! لقد أتقنت النظام الغذائي المتوازن. واصل العمل الرائع!"
+      }
+    }
+  },
+  "Relationships": {
+    "en_pillar_name": "Relationships",
+    "ar_pillar_name": "العلاقات",
+    "feedback": {
+      "1": {
+        "en": "Your social connections need improvement. Consider reaching out to loved ones more often.",
+        "ar": "تحتاج علاقاتك الاجتماعية إلى تحسين. فكر في التواصل مع أحبائك بشكل متكرر."
+      },
+      "2": {
+        "en": "You have a few connections, but you may benefit from deeper interactions.",
+        "ar": "لديك بعض العلاقات، ولكن قد تستفيد من تفاعلات أعمق."
+      },
+      "3": {
+        "en": "Your relationships are stable. Try engaging more in meaningful conversations.",
+        "ar": "علاقاتك مستقرة. حاول الانخراط أكثر في محادثات ذات مغزى."
+      },
+      "4": {
+        "en": "You have a strong social network. Continue to nurture your relationships.",
+        "ar": "لديك شبكة اجتماعية قوية. استمر في رعاية علاقاتك."
+      },
+      "5": {
+        "en": "Amazing! You have deep and meaningful relationships. Keep fostering them!",
+        "ar": "رائع! لديك علاقات عميقة وذات مغزى. استمر في تنميتها!"
+      }
+    }
+  },
+  "Movement & Exercise": {
+    "en_pillar_name": "Movement & Exercise",
+    "ar_pillar_name": "الحركة والتمارين",
+    "feedback": {
+      "1": {
+        "en": "You need to be more active. Consider starting with light exercises daily.",
+        "ar": "تحتاج إلى أن تكون أكثر نشاطًا. فكر في البدء بتمارين خفيفة يوميًا."
+      },
+      "2": {
+        "en": "You have some movement, but increasing activity levels will improve your health.",
+        "ar": "لديك بعض الحركة، ولكن زيادة مستويات النشاط ستعزز صحتك."
+      },
+      "3": {
+        "en": "Your physical activity is moderate. Try adding variety to your workouts.",
+        "ar": "نشاطك البدني معتدل. حاول إضافة تنوع إلى تمارينك."
+      },
+      "4": {
+        "en": "Well done! You maintain an active lifestyle. Keep pushing your limits.",
+        "ar": "أحسنت! تحافظ على نمط حياة نشط. استمر في تحدي نفسك."
+      },
+      "5": {
+        "en": "Excellent! Your movement habits are outstanding. Keep inspiring others!",
+        "ar": "ممتاز! عادات حركتك رائعة. استمر في إلهام الآخرين!"
+      }
+    }
+  },
+  "Sleep & Recovery": {
+    "en_pillar_name": "Sleep & Recovery",
+    "ar_pillar_name": "النوم والتعافي",
+    "feedback": {
+      "1": {
+        "en": "Your sleep needs improvement. Try establishing a bedtime routine for better rest.",
+        "ar": "يحتاج نومك إلى تحسين. حاول إنشاء روتين قبل النوم للحصول على راحة أفضل."
+      },
+      "2": {
+        "en": "You get some rest, but improving your sleep quality can enhance your well-being.",
+        "ar": "تحصل على بعض الراحة، لكن تحسين جودة نومك يمكن أن يعزز رفاهيتك."
+      },
+      "3": {
+        "en": "Your sleep habits are average. Consider optimizing your sleep environment.",
+        "ar": "عادات نومك متوسطة. فكر في تحسين بيئة نومك."
+      },
+      "4": {
+        "en": "Great job! You maintain a healthy sleep schedule. Keep it up!",
+        "ar": "عمل رائع! تحافظ على جدول نوم صحي. استمر على هذا المنوال!"
+      },
+      "5": {
+        "en": "Excellent! Your sleep patterns are well-structured. Continue prioritizing rest!",
+        "ar": "ممتاز! أنماط نومك منظمة بشكل جيد. استمر في إعطاء الأولوية للراحة!"
+      }
+    }
+  }
+}

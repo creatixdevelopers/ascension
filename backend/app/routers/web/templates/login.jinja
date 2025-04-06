@@ -26,7 +26,7 @@
 									</div>
 								</div>
 							</div>
-							<form action="#!">
+							<form id="loginForm">
 								<div class="row gy-3 overflow-hidden">
 									<div class="col-12">
 										<div class="form-floating mb-3">
@@ -37,8 +37,8 @@
 									</div>
 									<div class="col-12">
 										<div class="form-floating mb-3">
-											<input type="password" class="form-control" name="password" id="password" value=""
-														 placeholder="Password" required/>
+											<input type="password" class="form-control" name="password" id="password" placeholder="Password"
+														 required/>
 											<label for="password" class="form-label">Password</label>
 										</div>
 									</div>
@@ -48,6 +48,7 @@
 											<label class="form-check-label text-secondary" for="remember_me"> Keep me logged in </label>
 										</div>
 									</div>
+									<div id="error-message" style="color: red;"></div>
 									<div class="col-12">
 										<div class="d-grid">
 											<button class="btn btn-primary btn-lg" type="submit">Log in now</button>
@@ -68,4 +69,42 @@
 			</div>
 		</div>
 	</section>
+
+	<script>
+		const loginForm = document.getElementById('loginForm');
+		const errorMessage = document.getElementById('error-message');
+		const emailInput = document.getElementById('email');
+		const passwordInput = document.getElementById('password');
+
+		loginForm.addEventListener('submit', async function (e) {
+			e.preventDefault();
+
+			errorMessage.textContent = '';
+			const email = emailInput.value.trim();
+			const password = passwordInput.value.trim();
+
+			if (!email || !password) {
+				errorMessage.textContent = 'Email and password are required';
+				return;
+			}
+
+			const data = {email: email, password: password};
+			try {
+				const response = await fetch("/api/auth/login-web",
+					{
+						method: "POST",
+						headers: {"Content-Type": "application/json"},
+						body: JSON.stringify(data)
+					});
+				const json = await response.json();
+				if (!response.ok) {
+					errorMessage.textContent = json.message || 'Login failed. Please check your credentials.';
+				}
+				location.reload();
+			} catch (error) {
+				console.error('Error:', error);
+				errorMessage.textContent = 'An error occurred during login. Please try again.';
+			}
+		});
+	</script>
 {% endblock content %}

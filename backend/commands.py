@@ -6,7 +6,7 @@ import typer
 current_path = Path(__file__).resolve().parent
 sys.path.append(current_path)
 
-from app.models import Base, Permission, Role, User
+from app.models import Base, Permission, Role, User, Quiz
 from app.services.db import engine, session
 
 dev = typer.Typer()
@@ -30,9 +30,13 @@ def add_data():
     db = session()
 
     admin_dashboard_permission = Permission.create(db=db, name="admin_dashboard.*")
-    permissions = {"admin_dashboard.*": admin_dashboard_permission}
+    user_dashboard_permission = Permission.create(db=db, name="user_dashboard.*")
+    permissions = {
+        "admin_dashboard.*": admin_dashboard_permission,
+        "user_dashboard.*": user_dashboard_permission,
+    }
 
-    resources = ["permission", "role", "user"]
+    resources = ["permission", "role", "user", "quiz", "response"]
     for resource in resources:
         permissions[f"{resource}.*"] = Permission.create(db=db, name=f"{resource}.*")
         for action in ["create", "read", "update", "delete"]:
@@ -45,10 +49,22 @@ def add_data():
 
     admin_role = Role.create(db=db, name="admin")
     admin_role.permissions.extend(
-        permissions[permission] for permission in ["permission.*", "role.*", "user.*"]
+        permissions[permission]
+        for permission in ["permission.*", "role.*", "user.*", "quiz.*", "response.*"]
     )
 
     user_role = Role.create(db=db, name="user")
+    user_role.permissions.extend(
+        permissions[permission]
+        for permission in [
+            "user_dashboard.*",
+            "quiz.read",
+            "response.create",
+            "response.read",
+            "response.update",
+            "response.delete",
+        ]
+    )
 
     User.create(
         db=db,
@@ -66,10 +82,16 @@ def add_data():
         role=user_role,
         email="user@app.com",
         name="User",
-        phone="1234567890",
+        phone="9876543210",
         password="password",
         verified=True,
         active=True,
+    )
+
+    Quiz.create(
+        db=db,
+        uid="zWPa15oNvBxkEfulAqRQZOL",
+        name="Quiz 1",
     )
 
     db.commit()

@@ -15,6 +15,9 @@ node_modules/
 # env files
 .env
 
+# misc
+*.db
+
 # development files
 .vscode/
 .idea/
