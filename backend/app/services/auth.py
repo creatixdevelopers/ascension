@@ -62,11 +62,13 @@ def requires(
 
             # If no access token in the header or cookies, raise Unauthorized error
             if not access_token:
+                print("Access token missing or invalid")
                 raise Unauthorized("Access token missing or invalid")
 
             claims = verify_jwt(access_token)
             user_scopes = claims.get("scopes")
             if not has_required_scopes(user_scopes, required_scopes):
+                print("Insufficient scopes")
                 raise Forbidden("Insufficient scopes")
 
             request.state.sub = claims.get("sub")

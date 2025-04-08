@@ -21,12 +21,10 @@ class Quiz(Base, ModelMixin, CreatedMixin, LastUpdatedMixin):
 
 
 class Response(Base, ModelMixin, CreatedMixin, LastUpdatedMixin):
-    quiz_id: Mapped[int] = mapped_column(
-        ForeignKey("quiz.id"), primary_key=True, index=True
-    )
-    user_id: Mapped[int] = mapped_column(
-        ForeignKey("user.id"), primary_key=True, index=True
-    )
+    id: Mapped[int] = mapped_column(primary_key=True)
+    uid: Mapped[str] = mapped_column(String(17), unique=True, index=True, default=generate_uid)
+    quiz_id: Mapped[int] = mapped_column(ForeignKey("quiz.id"), index=True)
+    user_id: Mapped[int] = mapped_column(ForeignKey("user.id"), index=True)
     data: Mapped[Optional[dict]] = mapped_column(JSON)
 
     quiz: Mapped[Quiz] = relationship("Quiz", back_populates="responses")

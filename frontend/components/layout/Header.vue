@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import {
+  ArrowLeftIcon,
   Home,
   LogOut,
   Menu,
@@ -7,38 +8,43 @@ import {
   SquareUserRound,
   Sun,
   UserRound,
-  Users,
-} from "lucide-vue-next";
-import { Button } from "~/components/ui/button";
+  Users
+} from "lucide-vue-next"
+import { Button } from "~/components/ui/button"
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuLabel,
   DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "~/components/ui/dropdown-menu";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+  DropdownMenuTrigger
+} from "~/components/ui/dropdown-menu"
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 
-const { state, logout } = useAuthStore();
-const colorMode = useColorMode();
-const route = useRoute();
+const { state, logout } = useAuthStore()
+const colorMode = useColorMode()
+const route = useRoute()
+const router = useRouter()
 
 function toggleTheme(): void {
-  colorMode.preference = colorMode.preference === "light" ? "dark" : "light";
+  colorMode.preference = colorMode.preference === "light" ? "dark" : "light"
 }
 
 async function handleLogout(): Promise<void> {
-  const { status } = await logout();
+  const { status } = await logout()
   if (status) {
-    navigateTo("/login");
+    navigateTo("/login")
   }
+}
+
+function handleBack(): void {
+  router.back()
 }
 </script>
 
 <template>
   <header
-    class="sticky top-0 z-40 flex h-14 items-center gap-4 px-4 lg:h-[60px] lg:px-8 lg:pr-6 bg-white/50 dark:bg-neutral-900/50 backdrop-blur-xl border-b border-white/20 dark:border-neutral-800/50"
+    class="sticky top-0 z-40 flex h-14 items-center gap-4 border-b border-white/20 bg-white/50 px-4 backdrop-blur-xl dark:border-neutral-800/50 dark:bg-neutral-900/50 lg:h-[60px] lg:px-8 lg:pr-6"
   >
     <Sheet>
       <SheetTrigger as-child>
@@ -70,7 +76,7 @@ async function handleLogout(): Promise<void> {
           </NuxtLink>
           <NuxtLink
             class="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
-            to="/users"
+            to="/frontend/pages/user"
             activeClass="bg-muted"
           >
             <Users class="h-4 w-4" />
@@ -79,7 +85,10 @@ async function handleLogout(): Promise<void> {
         </nav>
       </SheetContent>
     </Sheet>
-    <div class="w-full flex-1">
+    <div class="flex items-center gap-2 w-full flex-1">
+      <Button variant="ghost" size="icon" class="rounded-full" title="Go Back" @click="handleBack">
+        <ArrowLeftIcon class="h-4 w-4" />
+      </Button>
       <h1 class="text-lg font-semibold md:text-2xl">
         {{ route.meta.title || "Dashboard" }}
       </h1>

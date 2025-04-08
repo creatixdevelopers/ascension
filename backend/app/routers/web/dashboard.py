@@ -6,12 +6,12 @@ from app.models import Payment, Quiz, Response, User
 from app.services.auth import web_requires
 from app.services.db import dbDep
 from app.utils import current_datetime
+from app.config import settings
 
 from . import templates
 
 router = APIRouter(tags=["auth"])
-
-QUIZ_ID = "zWPa15oNvBxkEfulAqRQZOL"
+QUIZ_ID = settings.QUIZ_ID
 
 
 @router.get("/404/")

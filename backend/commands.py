@@ -36,7 +36,7 @@ def add_data():
         "user_dashboard.*": user_dashboard_permission,
     }
 
-    resources = ["permission", "role", "user", "quiz", "response"]
+    resources = ["permission", "role", "user", "payment", "quiz", "response"]
     for resource in resources:
         permissions[f"{resource}.*"] = Permission.create(db=db, name=f"{resource}.*")
         for action in ["create", "read", "update", "delete"]:
@@ -50,7 +50,7 @@ def add_data():
     admin_role = Role.create(db=db, name="admin")
     admin_role.permissions.extend(
         permissions[permission]
-        for permission in ["permission.*", "role.*", "user.*", "quiz.*", "response.*"]
+        for permission in ["permission.*", "role.*", "user.*", "payment.*", "quiz.*", "response.*"]
     )
 
     user_role = Role.create(db=db, name="user")

@@ -22,6 +22,8 @@ class Settings(BaseSettings):
     app_dir: str = str(_app_dir)
 
     templates_dir: str = str(_app_dir / "routers" / "web" / "templates")
+
+    _static_dir = _app_dir / "static"
     static_dir: str = str(_app_dir / "static")
 
     logs_folder: str = f"{_app_dir}"
@@ -36,6 +38,8 @@ class Settings(BaseSettings):
 
     SECRET_KEY: str = "yCMLSIKvb8JF29JjxXVRu69pvRvkoAgL1mMJABbJgOQ"
     DATABASE_URI: str = f"sqlite:///{str((_project_dir / 'app.db').resolve())}"
+
+    QUIZ_ID: str = "zWPa15oNvBxkEfulAqRQZOL"
 
     STRIPE_API_KEY: str = "sk_test_51MqVuLCh3WlIvSBdsFGBsVnm6Z0QtfIuYmm3PhLt8Iy1pIF6UQdwpT3iBJYK2NSl4IGmfXEy72WCqx0j3w8P62WT00AjOmd6wO"
     STRIPE_WEBHOOK_SECRET: str = (

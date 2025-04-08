@@ -2,10 +2,11 @@ from datetime import datetime, timezone
 
 import stripe
 from fastapi import APIRouter, Request
+from sqlalchemy import select
 
 from app.config import settings
 from app.models import Payment, User
-from app.schemas.payment import CheckoutSchema
+from app.schemas.payment import CheckoutSchema, PaymentReadSchema
 from app.services.auth import requires
 from app.services.db import dbDep
 from app.services.exceptions import BadRequest, ServerError
@@ -95,3 +96,11 @@ async def post_webhook(request: Request, db: dbDep):
     else:
         print(f"Unhandled event type: {event['type']}")
         return {}
+
+
+@router.get("/user/{user_id}/", response_model=list[PaymentReadSchema])
+@requires(["payment.read.all"])
+async def get_payments_by_user(request: Request, db: dbDep, user_id: str):
+    query = select(Payment).join(Payment.user).where(User.uid == user_id)
+    payments = db.execute(query).scalars().all()
+    return [payment for payment in payments]

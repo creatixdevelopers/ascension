@@ -21,6 +21,12 @@ class UserUpdateSchema(Model):
     role: conint(ge=1)
 
 
+class UserIdSchema(Model):
+    uid: str
+    email: Email
+    name: constr(strip_whitespace=True, max_length=132)
+
+
 class UserReadSchema(Model):
     uid: str
     created: datetime

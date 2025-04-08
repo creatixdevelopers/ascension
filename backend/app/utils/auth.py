@@ -35,6 +35,7 @@ def create_access_token(user: User, fresh: bool = False, exp: int = None):
     """
     role = user.role
     permissions = user.scopes
+    print(permissions)
     payload = {
         "type": "access",
         "fresh": fresh,

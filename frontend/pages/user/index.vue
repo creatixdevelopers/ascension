@@ -5,6 +5,7 @@ import DataTableColumnHeader from "~/components/datatable/DataTableColumnHeader.
 import { useDateFormat } from "@vueuse/core"
 import { Check, Cross } from "lucide-vue-next"
 import { Badge } from "~/components/ui/badge"
+import NuxtLink from "#app/components/nuxt-link.js";
 
 definePageMeta({
   layout: "dashboard",
@@ -18,7 +19,9 @@ const columns = [
   {
     accessorKey: "name",
     header: ({ column }) => h(DataTableColumnHeader, { column, title: "User" }),
-    cell: ({ row }) => h("p", row.getValue("name")),
+    cell: ({ row }) => {
+      return h(NuxtLink, {to: `/user/${row.id}`, "class": "text-blue-500 hover:underline"}, row.getValue("name"))
+    },
     enableHiding: false
   },
   {
@@ -75,7 +78,7 @@ const columns = [
 
 const { state, onStateChange } = useDataTable()
 
-const { data, status } = useFetch("/api/user/data-table/", {
+const { data, status } = useAPI("/api/user/data-table/", {
   method: "POST",
   body: state
 })
