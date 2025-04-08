@@ -1,8 +1,8 @@
 """initial migration
 
-Revision ID: c22fac098184
+Revision ID: 15f6abd99fa5
 Revises: 
-Create Date: 2025-04-09 00:17:04.462640
+Create Date: 2025-04-09 02:12:05.522259
 
 """
 from typing import Sequence, Union
@@ -12,7 +12,7 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision: str = 'c22fac098184'
+revision: str = '15f6abd99fa5'
 down_revision: Union[str, None] = None
 branch_labels: Union[str, Sequence[str], None] = None
 depends_on: Union[str, Sequence[str], None] = None
@@ -29,7 +29,7 @@ def upgrade() -> None:
     )
     op.create_table('quiz',
     sa.Column('id', sa.Integer(), nullable=False),
-    sa.Column('uid', sa.String(length=17), nullable=False),
+    sa.Column('uid', sa.String(length=23), nullable=False),
     sa.Column('name', sa.String(length=255), nullable=False),
     sa.Column('description', sa.Text(), nullable=True),
     sa.Column('created', sa.DateTime(), nullable=False),
@@ -52,7 +52,7 @@ def upgrade() -> None:
     )
     op.create_table('user',
     sa.Column('id', sa.Integer(), nullable=False),
-    sa.Column('uid', sa.String(length=17), nullable=False),
+    sa.Column('uid', sa.String(length=23), nullable=False),
     sa.Column('email', sa.String(length=128), nullable=False),
     sa.Column('name', sa.String(length=128), nullable=False),
     sa.Column('phone', sa.String(length=16), nullable=False),
@@ -80,7 +80,7 @@ def upgrade() -> None:
     op.create_index(op.f('ix_payment_user_id'), 'payment', ['user_id'], unique=False)
     op.create_table('response',
     sa.Column('id', sa.Integer(), nullable=False),
-    sa.Column('uid', sa.String(length=17), nullable=False),
+    sa.Column('uid', sa.String(length=23), nullable=False),
     sa.Column('quiz_id', sa.Integer(), nullable=False),
     sa.Column('user_id', sa.Integer(), nullable=False),
     sa.Column('data', sa.JSON(), nullable=True),

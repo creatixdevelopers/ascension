@@ -13,11 +13,6 @@ class Settings(BaseSettings):
     env: str = "development"
     is_prod: bool = env == "production"
 
-    cors_allowed_origins: list[str] = [
-        "http://127.0.0.1:3000",
-        "http://localhost:3000",
-    ]
-
     project_dir: str = str(_project_dir)
     app_dir: str = str(_app_dir)
 
@@ -44,10 +39,11 @@ class Settings(BaseSettings):
     )
 
     MAIL_USERNAME: str = "info@theascension.co"
-    MAIL_PASSWORD: str = ""
+    MAIL_PASSWORD: str = "******"
 
     QUIZ_ID: str = "zWPa15oNvBxkEfulAqRQZOL"
 
+    CORS_ORIGINS: str = "http://127.0.0.1:3000,http://localhost:3000"
     DOMAIN: str = "http://localhost:8000"
 
 

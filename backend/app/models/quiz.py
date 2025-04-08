@@ -12,7 +12,7 @@ from .user import User
 class Quiz(Base, ModelMixin, CreatedMixin, LastUpdatedMixin):
     id: Mapped[int] = mapped_column(primary_key=True)
     uid: Mapped[str] = mapped_column(
-        String(17), unique=True, index=True, default=generate_uid
+        String(23), unique=True, index=True, default=generate_uid
     )
     name: Mapped[str] = mapped_column(String(255), nullable=False)
     description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
@@ -22,7 +22,7 @@ class Quiz(Base, ModelMixin, CreatedMixin, LastUpdatedMixin):
 
 class Response(Base, ModelMixin, CreatedMixin, LastUpdatedMixin):
     id: Mapped[int] = mapped_column(primary_key=True)
-    uid: Mapped[str] = mapped_column(String(17), unique=True, index=True, default=generate_uid)
+    uid: Mapped[str] = mapped_column(String(23), unique=True, index=True, default=generate_uid)
     quiz_id: Mapped[int] = mapped_column(ForeignKey("quiz.id"), index=True)
     user_id: Mapped[int] = mapped_column(ForeignKey("user.id"), index=True)
     data: Mapped[Optional[dict]] = mapped_column(JSON)

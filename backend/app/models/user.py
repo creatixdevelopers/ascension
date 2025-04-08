@@ -17,7 +17,7 @@ password_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 class User(Base, ModelMixin, CreatedMixin, LastUpdatedMixin):
     id: Mapped[int] = mapped_column(primary_key=True)
     uid: Mapped[str] = mapped_column(
-        String(17), unique=True, index=True, default=generate_uid
+        String(23), unique=True, index=True, default=generate_uid
     )
     email: Mapped[str] = mapped_column(String(128), unique=True)
     name: Mapped[str] = mapped_column(String(128))

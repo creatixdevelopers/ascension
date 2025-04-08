@@ -11,10 +11,10 @@ engine: Engine | None = None
 session: sessionmaker[Session] | None = None
 
 database_uri = settings.DATABASE_URI
-if database_uri.startswith("postgres://"):
+if database_uri.startswith("postgres"):
     engine = create_engine(database_uri)
     session = sessionmaker(engine)
-elif database_uri.startswith("sqlite://"):
+elif database_uri.startswith("sqlite"):
     engine = create_engine(database_uri, connect_args={"check_same_thread": False})
     session = sessionmaker(engine, expire_on_commit=False)
 else:

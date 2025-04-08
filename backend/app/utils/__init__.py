@@ -11,7 +11,7 @@ def current_datetime() -> datetime:
     return datetime.now(tz=timezone.utc)
 
 
-def generate_uid(n: int = 17) -> str:
+def generate_uid(n: int = 23) -> str:
     """
     Generates a unique ID.
 
