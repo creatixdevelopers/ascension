@@ -148,19 +148,24 @@
 
 		// Navigate to Next Section
 		function nextSection() {
+
 			if (currentSectionIndex < sections.en.length - 1) {
+				console.log("validating section...")
 				if (!validateSection()) return;
+				console.log("loading next section...")
 				currentSectionIndex++;
 				loadSection();
+				scrollToTop();
 			}
 		}
 
 		// Navigate to Previous Section
 		function prevSection() {
 			if (currentSectionIndex > 0) {
-				if (!validateSection()) return;
+				{#if (!validateSection()) return;#}
 				currentSectionIndex--;
 				loadSection();
+				scrollToTop();
 			}
 		}
 
@@ -181,7 +186,7 @@
 				alert(currentLanguage === "en" ? "Submission failed. Please try again." : "فشل الإرسال. يرجى المحاولة مرة أخرى.");
 				return;
 			}
-			{#window.location.href = "/feedback";#}
+			window.location.href = "/feedback";
 		}
 	</script>
 {% endblock scripts %}

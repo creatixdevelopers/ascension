@@ -1,11 +1,57 @@
 {% extends './base.jinja' %}
 
+{% block styles %}
+	<style>
+    .pdf-mode {
+      background-color: #111111 !important;
+      color: #ffffff !important;
+      padding-top: 60px;
+      padding-bottom: 60px;
+      min-height: 100vh;
+    }
+
+    .pdf-mode * {
+      color: #ffffff !important;
+    }
+
+    body.pdf-mode,
+    html.pdf-mode {
+      background-color: #111111 !important;
+    }
+
+    .pdf-logo-container {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .pdf-logo-container img {
+      max-width: 160px;
+      height: auto;
+    }
+
+    .feedback-section,
+    .cta-buttons,
+    .progress-container,
+    table,
+    section {
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+	</style>
+{% endblock styles %}
+
 {% block content %}
 	<main class="main">
+		<div class="pdf-logo-container d-none">
+			<img src="{{ url_for('static', path='/img/logo.png') }}" alt="Logo"/>
+		</div>
 		<!-- Feedback Section -->
 		<section id="feedback" class="py-4">
 			<div class="container">
-				<div class="header-container">
+				<div class="d-flex justify-content-end">
+					<button class="btn btn-primary my-4" onclick="downloadPDF()">Download Page as PDF</button>
+				</div>
+				<div class="header-container no-pdf">
 					<div class="form-check form-switch">
 						<input class="form-check-input" type="checkbox" role="switch" id="languageToggle"
 									 onchange="toggleLanguage()"/>
@@ -38,8 +84,9 @@
 
 				<!-- Call-to-Action Buttons -->
 				<div class="cta-buttons mt-5">
-					<button class="btn btn-primary mx-2 my-2">Book a Call with Arsalan</button>
-					<button class="btn btn-primary mx-2 my-2">Subscribe to the Newsletter</button>
+					<a href="https://theascension.co/contact-us/" target="_blank">
+						<button class="btn btn-primary mx-2 my-2">Book a Call with Arsalan</button>
+					</a>
 				</div>
 			</div>
 		</section>
@@ -48,6 +95,53 @@
 {% endblock content %}
 
 {% block scripts %}
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+	<script type="application/javascript">
+		function downloadPDF() {
+			const element = document.querySelector("main");
+
+			document.body.classList.add("pdf-mode");
+			document.documentElement.classList.add("pdf-mode");
+
+			element.classList.add("pdf-mode");
+
+			document.querySelectorAll("button, .no-pdf").forEach((el) => (el.style.display = "none"));
+			document.querySelector(".pdf-logo-container").classList.remove("d-none");
+
+			const opt = {
+				margin: 0,
+				filename: "ascension-feedback.pdf",
+				image: {type: "jpeg", quality: 1},
+				html2canvas: {
+					scale: 2,
+					useCORS: true,
+					backgroundColor: "#111111",
+					scrollY: 0,
+				},
+				jsPDF: {
+					unit: "in",
+					format: "a4",
+					orientation: "portrait",
+				},
+			};
+
+			html2pdf()
+				.set(opt)
+				.from(element)
+				.save()
+				.then(() => {
+					document.body.classList.remove("pdf-mode");
+					document.documentElement.classList.remove("pdf-mode");
+					element.classList.remove("pdf-mode");
+					const hideDuringPDF = document.querySelectorAll("button, .no-pdf");
+					hideDuringPDF.forEach((el) => {
+						el.setAttribute("data-original-display", el.style.display || "");
+						el.style.display = "none";
+					});
+					document.querySelector(".pdf-logo-container").classList.add("d-none");
+				});
+		}
+	</script>
 	<script type="application/javascript">
 		const quiz_id = "{{ quiz_id }}";
 		const results = {{ results|tojson }};

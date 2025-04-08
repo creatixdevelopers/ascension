@@ -90,7 +90,7 @@ const { data, status } = useAPI("/api/user/data-table/", {
     :columns="columns"
     :data="data?.data"
     :rowCount="data?.total"
-    :loading="false"
+    :loading="status==='pending'"
     @change="onStateChange"
   />
 </template>

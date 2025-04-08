@@ -7,41 +7,45 @@
 		<section id="pricing" class="pricing section">
 			<div class="container">
 				<div class="row gy-3 d-flex justify-content-center">
-					<div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="100">
-						<div class="pricing-item">
-							<h3>Free</h3>
-							<h4><sup>$</sup>0<span> / month</span></h4>
-							<ul>
-								<li>Aida dere</li>
-								<li>Nec feugiat nisl</li>
-								<li>Nulla at volutpat dola</li>
-								<li class="na">Pharetra massa</li>
-								<li class="na">Massa ultricies mi</li>
+					<!-- Subscription Plan -->
+					<div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="100">
+						<div class="pricing-item text-center shadow p-4 rounded">
+							<h3>Monthly Subscription</h3>
+							<h4 class="my-3"><sup>$</sup>49<span> / month</span></h4>
+							<button id="subscription" class="payment-btn btn btn-primary btn-sm mb-4 w-100">Start A 7-Day Free Trial
+							</button>
+							<hr/>
+							<h5 class="mb-3">FEATURES</h5>
+							<ul class="list-unstyled text-start">
+								<li>✅ &nbsp; Bi-monthly live sessions from Arsalan</li>
+								<li>✅ &nbsp; Regular Q&A sessions</li>
+								<li>✅ &nbsp; Access to the community tab</li>
+								<li>✅ &nbsp; Ability to take the assessment monthly</li>
+								<li>✅ &nbsp; Subscription to the exclusive newsletter</li>
 							</ul>
-							<button id="one_time" class="payment-btn btn btn-primary">Buy Now</button>
 						</div>
 					</div>
-					<!-- End Pricing Item -->
-					<div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="400">
-						<div class="pricing-item">
-							<span class="advanced">Advanced</span>
-							<h3>Ultimate</h3>
-							<h4><sup>$</sup>49<span> / month</span></h4>
-							<ul>
-								<li>Aida dere</li>
-								<li>Nec feugiat nisl</li>
-								<li>Nulla at volutpat dola</li>
-								<li>Pharetra massa</li>
-								<li>Massa ultricies mi</li>
+
+					<!-- One-Time Plan -->
+					<div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="200">
+						<div class="pricing-item text-center shadow p-4 rounded">
+							<h3>One-Time Access</h3>
+							<h4 class="my-3"><sup>$</sup>65<span> / one-time</span></h4>
+							<button id="one_time" class="payment-btn btn btn-primary btn-sm mb-4 w-100">Buy Now</button>
+							<hr/>
+							<h5 class="mb-3">FEATURES</h5>
+							<ul class="list-unstyled text-start">
+								<li>❌ &nbsp; Bi-monthly live sessions from Arsalan</li>
+								<li>❌ &nbsp; Regular Q&A sessions</li>
+								<li>❌ &nbsp; Access to the community tab</li>
+								<li>✅ &nbsp; Ability to take the assessment monthly</li>
+								<li>✅ &nbsp; Subscription to the exclusive newsletter</li>
 							</ul>
-							<button id="subscription" class="payment-btn btn btn-primary">Buy Now</button>
 						</div>
 					</div>
-					<!-- End Pricing Item -->
 				</div>
 			</div>
 		</section>
-		<!-- /Pricing Section -->
 	</main>
 {% endblock content %}
 
@@ -52,7 +56,7 @@
 			const response = await fetch('/api/payment/checkout', {
 				method: 'POST',
 				headers: {'Content-Type': 'application/json'},
-				body: JSON.stringify({ type: payment_type })
+				body: JSON.stringify({type: payment_type})
 			});
 			if (!response.ok) {
 				console.error("Failed to fetch payment link", response.statusText);
@@ -60,11 +64,11 @@
 			}
 			const data = await response.json();
 			if (data.url) {
-				location.href = data.url
+				location.href = data.url;
 			} else {
 				console.error("Invalid response from server", data);
 				alert("Failed to fetch payment link");
 			}
-		})
+		});
 	</script>
 {% endblock %}

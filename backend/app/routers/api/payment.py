@@ -27,7 +27,8 @@ async def post_checkout(request: Request, data: CheckoutSchema, db: dbDep):
 
     try:
         session = stripe.checkout.Session.create(
-            success_url="http://localhost:8000/payment-callback",
+            success_url=f"{settings.DOMAIN}/payment-redirect?success=true",
+            cancel_url=f"{settings.DOMAIN}/payment-redirect?success=false",
             customer_email=user.email,
             line_items=[{"price": price_id, "quantity": 1}],
             mode="payment" if one_time_payment else "subscription",

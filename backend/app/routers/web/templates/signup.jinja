@@ -89,8 +89,10 @@
 			</div>
 		</div>
 	</section>
+{% endblock content %}
 
-	<script>
+{% block scripts %}
+	<script type="application/javascript">
 		document.addEventListener('DOMContentLoaded', () => {
 			const form = $('form');
 			const errorMessage = $('#errorMessage');
@@ -139,4 +141,4 @@
 			});
 		});
 	</script>
-{% endblock content %}
+{% endblock scripts %}

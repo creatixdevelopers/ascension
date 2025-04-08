@@ -29,7 +29,7 @@ async def get_quiz_response(request: Request, response_id: str, db: dbDep):
                 res[pillar].append(
                     {
                         "question": question.get("en"),
-                        "response": response.data.get(pillar, {}).get(str(i), 0),
+                        "response": response.data.get(pillar, {}).get(str(i)),
                     }
                 )
 

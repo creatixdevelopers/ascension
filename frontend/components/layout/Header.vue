@@ -5,7 +5,7 @@ import {
   LogOut,
   Menu,
   Moon,
-  SquareUserRound,
+  FileBoxIcon,
   Sun,
   UserRound,
   Users
@@ -53,10 +53,10 @@ function handleBack(): void {
           <span class="sr-only">Toggle navigation menu</span>
         </Button>
       </SheetTrigger>
-      <SheetContent side="left" class="flex flex-col">
+      <SheetContent side="left" class="flex flex-col w-[90%] max-w-[90%]">
         <nav class="grid gap-2 text-lg font-medium">
           <NuxtLink to="/" class="flex items-center gap-2 font-semibold">
-            Acme Inc
+            Ascension
           </NuxtLink>
           <NuxtLink
             class="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all"
@@ -67,20 +67,20 @@ function handleBack(): void {
             Home
           </NuxtLink>
           <NuxtLink
-            class="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
-            to="/roles"
-            activeClass="bg-muted"
-          >
-            <SquareUserRound class="h-4 w-4" />
-            Roles
-          </NuxtLink>
-          <NuxtLink
-            class="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
-            to="/frontend/pages/user"
-            activeClass="bg-muted"
+            class="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all"
+            to="/user"
+            activeClass="bg-primary text-white dark:text-black"
           >
             <Users class="h-4 w-4" />
             Users
+          </NuxtLink>
+          <NuxtLink
+            class="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all"
+            to="/response"
+            activeClass="bg-primary text-white dark:text-black"
+          >
+            <FileBoxIcon class="h-4 w-4" />
+            Responses
           </NuxtLink>
         </nav>
       </SheetContent>

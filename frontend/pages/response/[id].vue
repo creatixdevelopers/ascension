@@ -36,14 +36,14 @@ const options = ["Strongly Disagree", "Disagree", "Somewhat Agree", "Agree", "St
       <Table class="mb-4 w-full">
         <TableHeader>
           <TableRow class="w-full">
-            <TableHead class="w-1/2 font-bold">Question</TableHead>
-            <TableHead class="w-1/2 font-bold">Response</TableHead>
+            <TableHead class="w-2/3 font-bold">Question</TableHead>
+            <TableHead class="w-2/3 font-bold">Response</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
           <TableRow v-for="(question, index) in questions" :key="index">
             <TableCell class="py-2">{{ question.question }}</TableCell>
-            <TableCell class="py-2">{{ options[question.response] }}</TableCell>
+            <TableCell class="py-2">{{ question.response ? options[question.response]: '--' }}</TableCell>
           </TableRow>
         </TableBody>
       </Table>

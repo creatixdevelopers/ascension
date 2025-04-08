@@ -4,24 +4,24 @@
     "ar_pillar_name": "التغذية",
     "feedback": {
       "1": {
-        "en": "Your nutrition habits need significant improvement. Consider consulting a nutritionist.",
-        "ar": "تحتاج عاداتك الغذائية إلى تحسين كبير. فكر في استشارة أخصائي تغذية."
+        "en": "Your current eating habits may not be providing the energy and nourishment your body needs. Relying on processed foods and irregular meals can negatively impact your health. Making small changes, such as increasing whole foods, hydrating properly, and planning balanced meals, will significantly improve digestion, energy levels, and overall well-being.",
+        "ar": "قد لا توفر عاداتك الغذائية الحالية الطاقة والتغذية التي يحتاجها جسمك. يمكن أن يؤثر الاعتماد على الأطعمة المصنعة والوجبات غير المنتظمة سلبًا على صحتك. إجراء تغييرات بسيطة، مثل زيادة تناول الأطعمة الكاملة، والترطيب بشكل جيد، وتخطيط الوجبات المتوازنة، سيُحسن الهضم ومستويات الطاقة والرفاهية العامة بشكل كبير."
       },
       "2": {
-        "en": "You're making some effort, but your diet still requires attention to improve your health.",
-        "ar": "تبذل بعض الجهد، ولكن لا يزال نظامك الغذائي بحاجة إلى اهتمام لتحسين صحتك."
+        "en": "Your nutrition is somewhat balanced but inconsistent, leading to fluctuations in energy and digestion. Increasing the intake of fresh produce, lean proteins, and whole grains while reducing processed foods will create a more stable diet. Planning meals and maintaining hydration will help you sustain better long-term health and vitality.",
+        "ar": "نظامك الغذائي متوازن إلى حد ما لكنه غير منتظم، مما يؤدي إلى تقلبات في الطاقة والهضم. سيؤدي زيادة تناول المنتجات الطازجة، والبروتينات الخالية من الدهون، والحبوب الكاملة مع تقليل الأطعمة المصنعة إلى نظام غذائي أكثر استقرارًا. سيساعدك تخطيط الوجبات والحفاظ على الترطيب على تحقيق صحة وحيوية أفضل على المدى الطويل."
       },
       "3": {
-        "en": "Your nutrition is balanced, but there's room for improvement with better meal planning.",
-        "ar": "تغذيتك متوازنة، ولكن هناك مجال للتحسين مع تخطيط وجبات أفضل."
+        "en": "You maintain a fair diet but could refine your approach to meal planning and food choices. Reducing unhealthy indulgences, prioritizing nutrient-dense foods, and focusing on portion control will improve overall vitality. Eating at consistent times and incorporating a variety of nutrients will help support long-term health and optimal energy levels.",
+        "ar": "تحافظ على نظام غذائي جيد ولكن يمكنك تحسين نهجك في تخطيط الوجبات واختيار الأطعمة. سيؤدي تقليل الاستهلاك غير الصحي، وإعطاء الأولوية للأطعمة الغنية بالعناصر الغذائية، والتركيز على التحكم في الكمية إلى تحسين الحيوية العامة. سيساعد تناول الطعام في أوقات منتظمة ودمج مجموعة متنوعة من العناصر الغذائية في دعم الصحة على المدى الطويل ومستويات الطاقة المثلى."
       },
       "4": {
-        "en": "Great job! Your nutrition is in a good place. Maintain consistency in your healthy eating.",
-        "ar": "عمل رائع! تغذيتك في حالة جيدة. حافظ على الاستمرارية في تناول الطعام الصحي."
+        "en": "You follow a structured and nutritious diet that supports your lifestyle well. Ensuring a diverse range of whole foods, maintaining hydration, and continuing to explore healthy meal options will keep your diet effective. Minor refinements, like adjusting food intake based on activity levels, can further optimize your energy and digestion.",
+        "ar": "تتبع نظامًا غذائيًا منظمًا ومغذيًا يدعم نمط حياتك بشكل جيد. سيؤدي ضمان مجموعة متنوعة من الأطعمة الكاملة والحفاظ على الترطيب ومواصلة استكشاف الخيارات الغذائية الصحية إلى الحفاظ على فعالية نظامك الغذائي. يمكن أن تؤدي التحسينات الطفيفة، مثل تعديل كمية الطعام بناءً على مستويات النشاط، إلى تحسين الطاقة والهضم بشكل أكبر."
       },
       "5": {
-        "en": "Excellent! You have mastered a well-balanced diet. Keep up the great work!",
-        "ar": "ممتاز! لقد أتقنت النظام الغذائي المتوازن. واصل العمل الرائع!"
+        "en": "Your nutrition is well-optimized, providing sustained energy and supporting overall health. Your approach to balanced meals, mindful eating, and proper hydration ensures long-term well-being. Keeping variety in your diet and staying adaptable to nutritional needs will help maintain this strong foundation for optimal health and performance.",
+        "ar": "نظامك الغذائي محسّن بشكل جيد، ويوفر طاقة مستدامة ويدعم الصحة العامة. يضمن نهجك في تناول الوجبات المتوازنة وتناول الطعام بوعي والترطيب المناسب الرفاهية على المدى الطويل. سيساعد الحفاظ على التنوع في نظامك الغذائي والبقاء متكيفًا مع الاحتياجات الغذائية على الحفاظ على هذا الأساس القوي للصحة والأداء الأمثل."
       }
     }
   },
@@ -30,24 +30,24 @@
     "ar_pillar_name": "العلاقات",
     "feedback": {
       "1": {
-        "en": "Your social connections need improvement. Consider reaching out to loved ones more often.",
-        "ar": "تحتاج علاقاتك الاجتماعية إلى تحسين. فكر في التواصل مع أحبائك بشكل متكرر."
+        "en": "Your relationships may feel distant or strained, impacting emotional well-being. Strengthening communication, engaging in meaningful conversations, and making time for loved ones will help foster deeper connections. Prioritizing trust, active listening, and shared experiences will enhance the quality of your relationships and improve emotional fulfillment.",
+        "ar": "قد تبدو علاقاتك بعيدة أو متوترة، مما يؤثر على رفاهيتك العاطفية. سيؤدي تعزيز التواصل، والانخراط في محادثات ذات مغزى، وتخصيص وقت للأحباء إلى تعزيز الروابط العاطفية. ستُعزز الثقة والاستماع الفعّال والتجارب المشتركة جودة علاقاتك وتُحسن الإشباع العاطفي."
       },
       "2": {
-        "en": "You have a few connections, but you may benefit from deeper interactions.",
-        "ar": "لديك بعض العلاقات، ولكن قد تستفيد من تفاعلات أعمق."
+        "en": "Your relationships are somewhat stable but could improve with more effort in emotional engagement. Investing in consistent communication, expressing appreciation, and nurturing friendships will help build stronger, more fulfilling connections. Creating time for loved ones and strengthening mutual trust will enhance long-term relationship satisfaction.",
+        "ar": "علاقاتك مستقرة إلى حد ما ولكن يمكن تحسينها من خلال مزيد من الجهد في التفاعل العاطفي. سيساعد الاستثمار في التواصل المنتظم، والتعبير عن التقدير، ورعاية الصداقات على بناء علاقات أقوى وأكثر إرضاءً. إن تخصيص وقت للأحباء وتعزيز الثقة المتبادلة سيزيد من رضاك العاطفي على المدى الطويل."
       },
       "3": {
-        "en": "Your relationships are stable. Try engaging more in meaningful conversations.",
-        "ar": "علاقاتك مستقرة. حاول الانخراط أكثر في محادثات ذات مغزى."
+        "en": "You have a healthy social network, but focusing on deeper emotional connections can make relationships more meaningful. Maintaining consistent communication, being supportive, and prioritizing quality time with loved ones will help strengthen your bonds and create more fulfilling interactions.",
+        "ar": "لديك شبكة اجتماعية صحية، ولكن التركيز على الروابط العاطفية الأعمق يمكن أن يجعل العلاقات أكثر مغزى. سيُساعد الحفاظ على التواصل المنتظم، والدعم، وتخصيص وقت ذي جودة مع الأحباء على تقوية روابطك وخلق تفاعلات أكثر إرضاءً."
       },
       "4": {
-        "en": "You have a strong social network. Continue to nurture your relationships.",
-        "ar": "لديك شبكة اجتماعية قوية. استمر في رعاية علاقاتك."
+        "en": "Your relationships are strong, supportive, and well-balanced. Continuing to nurture trust, express gratitude, and engage in shared experiences will maintain long-term emotional fulfillment and connection. Strengthening your support system further by deepening conversations and providing encouragement will enhance your relationships.",
+        "ar": "علاقاتك قوية وداعمة ومتوازنة. سيُحافظ الاستمرار في رعاية الثقة، والتعبير عن الامتنان، والمشاركة في تجارب مشتركة على الإشباع العاطفي والاتصال على المدى الطويل. سيؤدي تعميق المحادثات وتقديم التشجيع إلى تعزيز علاقاتك."
       },
       "5": {
-        "en": "Amazing! You have deep and meaningful relationships. Keep fostering them!",
-        "ar": "رائع! لديك علاقات عميقة وذات مغزى. استمر في تنميتها!"
+        "en": "Your relationships are thriving and provide strong emotional and social support. You actively engage in meaningful conversations, prioritize emotional intimacy, and express appreciation for loved ones. Continuing to invest in deep connections and fostering mutual support will ensure lasting, rewarding relationships.",
+        "ar": "علاقاتك مزدهرة وتوفر دعمًا عاطفيًا واجتماعيًا قويًا. تشارك بنشاط في محادثات ذات مغزى، وتُعطي الأولوية للحميمية العاطفية، وتُعبّر عن امتنانك للأحباء. سيؤدي الاستمرار في الاستثمار في الروابط العميقة وتعزيز الدعم المتبادل إلى ضمان علاقات دائمة ومجزية."
       }
     }
   },
@@ -56,24 +56,24 @@
     "ar_pillar_name": "الحركة والتمارين",
     "feedback": {
       "1": {
-        "en": "You need to be more active. Consider starting with light exercises daily.",
-        "ar": "تحتاج إلى أن تكون أكثر نشاطًا. فكر في البدء بتمارين خفيفة يوميًا."
+        "en": "Low activity levels can negatively affect energy, mobility, and overall health. Starting with short, simple exercises like walking, stretching, or low-impact workouts will help build endurance and improve long-term fitness. Gradually increasing movement and finding enjoyable physical activities will enhance your overall well-being.",
+        "ar": "قد تؤثر مستويات النشاط المنخفضة سلبًا على الطاقة والحركة والصحة العامة. سيساعد البدء بتمارين بسيطة مثل المشي أو التمدد أو التمارين منخفضة التأثير في بناء القدرة على التحمل وتحسين اللياقة البدنية على المدى الطويل. إن زيادة الحركة تدريجيًا واختيار أنشطة بدنية ممتعة سيعزز رفاهيتك العامة."
       },
       "2": {
-        "en": "You have some movement, but increasing activity levels will improve your health.",
-        "ar": "لديك بعض الحركة، ولكن زيادة مستويات النشاط ستعزز صحتك."
+        "en": "You engage in some physical activity, but it is inconsistent. Establishing a regular workout routine with a mix of cardio, strength, and flexibility exercises will improve endurance and overall health. Committing to enjoyable activities and setting movement goals will encourage long-term fitness habits.",
+        "ar": "تمارس بعض النشاط البدني، لكنه غير منتظم. سيساعد إنشاء روتين تمارين منتظم يحتوي على تمارين قلبية وتمارين قوة وتمارين مرونة في تحسين القدرة على التحمل والصحة العامة. سيساعد الالتزام بأنشطة ممتعة وتحديد أهداف للحركة على تعزيز عادات اللياقة البدنية على المدى الطويل."
       },
       "3": {
-        "en": "Your physical activity is moderate. Try adding variety to your workouts.",
-        "ar": "نشاطك البدني معتدل. حاول إضافة تنوع إلى تمارينك."
+        "en": "You maintain a fairly active lifestyle but could benefit from adding more variety and consistency to your workouts. Balancing cardio, strength, and flexibility exercises will optimize fitness levels and improve mobility. Staying active regularly and increasing intensity will further enhance strength and stamina.",
+        "ar": "تحافظ على نمط حياة نشط إلى حد ما، ولكن قد تستفيد من إضافة مزيد من التنوع والاستمرارية إلى تمارينك. سيساعد التوازن بين التمارين القلبية والقوة والمرونة في تحسين مستويات اللياقة والحركة. إن البقاء نشطًا بانتظام وزيادة الشدة تدريجيًا سيعزز القوة والقدرة على التحمل بشكل أكبر."
       },
       "4": {
-        "en": "Well done! You maintain an active lifestyle. Keep pushing your limits.",
-        "ar": "أحسنت! تحافظ على نمط حياة نشط. استمر في تحدي نفسك."
+        "en": "You have a strong and structured exercise routine that supports overall health and energy levels. Continuing to challenge yourself with varied workouts, strength training, and flexibility exercises will sustain long-term mobility and well-being. Incorporating recovery and injury prevention strategies will maintain long-term fitness success.",
+        "ar": "لديك روتين تمرين قوي ومنظم يدعم الصحة العامة ومستويات الطاقة. سيُساهم الاستمرار في تحدي نفسك بتمارين متنوعة، وتمارين القوة، وتمارين المرونة في الحفاظ على الحركة والرفاهية على المدى الطويل. سيساعد تضمين استراتيجيات التعافي والوقاية من الإصابات على نجاح اللياقة البدنية المستدام."
       },
       "5": {
-        "en": "Excellent! Your movement habits are outstanding. Keep inspiring others!",
-        "ar": "ممتاز! عادات حركتك رائعة. استمر في إلهام الآخرين!"
+        "en": "Your fitness habits are exceptional, ensuring peak physical performance and long-term health. Balancing strength training, endurance workouts, and flexibility exercises while prioritizing recovery will optimize performance. Continuing to refine your technique and explore new fitness challenges will help sustain your high level of activity.",
+        "ar": "عادات اللياقة البدنية لديك استثنائية وتضمن أداءً جسديًا عاليًا وصحة طويلة الأمد. يضمن التوازن بين تدريب القوة، والتمارين التحملية، وتمارين المرونة مع إعطاء الأولوية للتعافي تحسين الأداء. سيُساعدك الاستمرار في تحسين تقنياتك واستكشاف تحديات لياقة جديدة في الحفاظ على هذا المستوى العالي من النشاط."
       }
     }
   },
@@ -82,24 +82,180 @@
     "ar_pillar_name": "النوم والتعافي",
     "feedback": {
       "1": {
-        "en": "Your sleep needs improvement. Try establishing a bedtime routine for better rest.",
-        "ar": "يحتاج نومك إلى تحسين. حاول إنشاء روتين قبل النوم للحصول على راحة أفضل."
+        "en": "Poor sleep quality may be affecting energy, concentration, and overall well-being. Establishing a bedtime routine, reducing screen exposure before sleep, and maintaining a consistent schedule will improve sleep quality and enhance recovery.",
+        "ar": "قد تؤثر جودة النوم السيئة على الطاقة والتركيز والصحة العامة. سيساعد إنشاء روتين قبل النوم، وتقليل التعرض للشاشات قبل النوم، والحفاظ على جدول منتظم في تحسين جودة النوم وتعزيز التعافي."
       },
       "2": {
-        "en": "You get some rest, but improving your sleep quality can enhance your well-being.",
-        "ar": "تحصل على بعض الراحة، لكن تحسين جودة نومك يمكن أن يعزز رفاهيتك."
+        "en": "Your sleep schedule is inconsistent, leading to occasional fatigue and decreased focus. Developing a structured nighttime routine, creating a restful environment, and maintaining a consistent bedtime will help improve sleep quality and recovery.",
+        "ar": "جدول نومك غير منتظم، مما يؤدي إلى التعب العرضي وانخفاض التركيز. سيساعد تطوير روتين ليلي منظم، وتهيئة بيئة مريحة، والحفاظ على وقت نوم ثابت في تحسين جودة النوم والتعافي."
       },
       "3": {
-        "en": "Your sleep habits are average. Consider optimizing your sleep environment.",
-        "ar": "عادات نومك متوسطة. فكر في تحسين بيئة نومك."
+        "en": "Your sleep habits are fairly balanced, but small optimizations such as reducing caffeine intake before bed and ensuring a comfortable sleep setting can improve overall rest. Prioritizing deep sleep and maintaining consistency will enhance long-term well-being.",
+        "ar": "عادات نومك متوازنة إلى حد ما، ولكن يمكن أن تؤدي التحسينات البسيطة مثل تقليل تناول الكافيين قبل النوم وضمان بيئة نوم مريحة إلى تحسين الراحة العامة. سيساعد إعطاء الأولوية للنوم العميق والحفاظ على الاتساق في تعزيز الرفاهية على المدى الطويل."
       },
       "4": {
-        "en": "Great job! You maintain a healthy sleep schedule. Keep it up!",
-        "ar": "عمل رائع! تحافظ على جدول نوم صحي. استمر على هذا المنوال!"
+        "en": "You maintain strong sleep habits that support energy, focus, and recovery. Continuing to practice relaxation techniques, limiting late-night disruptions, and optimizing your sleep routine will sustain high-quality rest.",
+        "ar": "تحافظ على عادات نوم قوية تدعم الطاقة والتركيز والتعافي. سيساعد الاستمرار في ممارسة تقنيات الاسترخاء، والحد من الاضطرابات الليلية، وتحسين روتين النوم على الحفاظ على راحة عالية الجودة."
       },
       "5": {
-        "en": "Excellent! Your sleep patterns are well-structured. Continue prioritizing rest!",
-        "ar": "ممتاز! أنماط نومك منظمة بشكل جيد. استمر في إعطاء الأولوية للراحة!"
+        "en": "Your sleep routine is well-structured and promotes maximum recovery. Consistently prioritizing high-quality rest, adjusting to lifestyle changes, and practicing mindfulness before bedtime will help maintain long-term energy and health.",
+        "ar": "روتين نومك منظم بشكل جيد ويعزز التعافي الكامل. سيساعد إعطاء الأولوية للراحة عالية الجودة باستمرار، والتكيف مع تغييرات نمط الحياة، وممارسة التأمل الذهني قبل النوم على الحفاظ على الطاقة والصحة على المدى الطويل."
+      }
+    }
+  },
+  "Spirituality": {
+    "en_pillar_name": "Spirituality",
+    "ar_pillar_name": "الروحانية",
+    "feedback": {
+      "1": {
+        "en": "Your connection to spirituality may feel lacking, leaving you searching for greater meaning or purpose. Exploring mindfulness, gratitude, or meditation can help you feel more centered. Engaging in reflective practices and dedicating time to inner growth will bring greater peace and a deeper sense of fulfillment.",
+        "ar": "قد تشعر بضعف في اتصالك بالروحانية، مما يجعلك تبحث عن معنى أو هدف أعمق. يمكن أن يساعدك استكشاف التأمل والامتنان أو ممارسة التأمل الذهني على الشعور بالتوازن. سيؤدي الانخراط في ممارسات تأملية وتخصيص وقت للنمو الداخلي إلى إحساس أعمق بالسلام والرضا."
+      },
+      "2": {
+        "en": "You have some awareness of spirituality but may not consistently engage with it. Making space for personal reflection, journaling, or practicing gratitude can enhance your sense of purpose. Strengthening spiritual connections, whether through nature, philosophy, or faith, can bring greater balance and emotional clarity.",
+        "ar": "لديك بعض الوعي بالروحانية لكنك قد لا تنخرط فيها بانتظام. سيساعد تخصيص وقت للتأمل الذاتي أو الكتابة أو ممارسة الامتنان على تعزيز شعورك بالهدف. يمكن أن يعزز تقوية الروابط الروحية - سواء من خلال الطبيعة أو الفلسفة أو الإيمان - التوازن والوضوح العاطفي."
+      },
+      "3": {
+        "en": "Your spiritual awareness is stable, providing you with some inner balance. Deepening your reflective practices, engaging in meaningful conversations, or connecting with a supportive community can help enrich your spiritual journey. Staying open to new perspectives will allow for continued personal and emotional growth.",
+        "ar": "وعيك الروحي مستقر ويوفر لك نوعًا من التوازن الداخلي. يمكن أن يساعدك تعميق ممارساتك التأملية والانخراط في محادثات ذات مغزى أو التواصل مع مجتمع داعم في إثراء رحلتك الروحية. سيساعدك البقاء منفتحًا على وجهات نظر جديدة في تحقيق المزيد من النمو الشخصي والعاطفي."
+      },
+      "4": {
+        "en": "You actively engage in spiritual or reflective practices that provide you with inner peace. Maintaining mindfulness, deepening self-awareness, and continuing to explore personal beliefs will further strengthen your emotional stability. Encouraging others in their journey can also provide fulfillment and strengthen your own spiritual path.",
+        "ar": "أنت تشارك بنشاط في ممارسات روحية أو تأملية تمنحك السلام الداخلي. سيساعدك الحفاظ على الوعي الذهني، وتعميق الوعي الذاتي، ومواصلة استكشاف المعتقدات الشخصية على تعزيز استقرارك العاطفي. يمكن أن يوفر تشجيع الآخرين في رحلتهم أيضًا شعورًا بالإشباع ويعزز مسارك الروحي."
+      },
+      "5": {
+        "en": "You have cultivated a deep spiritual connection that brings you clarity and fulfillment. Continuing to nurture your beliefs, reflect on personal growth, and inspire others will sustain your sense of purpose. Maintaining a balanced spiritual practice will ensure lifelong inner peace and wisdom.",
+        "ar": "لقد طورت اتصالًا روحيًا عميقًا يجلب لك الوضوح والإشباع. سيساعدك الاستمرار في تغذية معتقداتك، والتفكر في نموك الشخصي، وإلهام الآخرين في الحفاظ على شعورك بالهدف. إن الحفاظ على ممارسة روحية متوازنة سيضمن لك سلامًا داخليًا وحكمة طوال الحياة."
+      }
+    }
+  },
+  "Child Play": {
+    "en_pillar_name": "Child Play",
+    "ar_pillar_name": "لعب الطفولة",
+    "feedback": {
+      "1": {
+        "en": "Playfulness and creativity may be lacking in your daily life, leading to stress or routine fatigue. Engaging in fun activities, hobbies, or spontaneous adventures will help you reconnect with joy. Embracing curiosity and creativity can enhance both personal growth and relaxation.",
+        "ar": "قد تفتقر حياتك اليومية إلى المرح والإبداع، مما يؤدي إلى التوتر أو التعب من الروتين. سيساعدك الانخراط في أنشطة ممتعة أو هوايات أو مغامرات عفوية على استعادة الشعور بالفرح. يمكن أن يعزز تبني الفضول والإبداع من نموك الشخصي واسترخائك."
+      },
+      "2": {
+        "en": "You occasionally engage in fun activities but may need to incorporate more moments of play into your routine. Prioritizing creativity, laughter, and interactive experiences will bring more relaxation and enjoyment into daily life. Exploring hobbies or playful social activities can strengthen emotional well-being.",
+        "ar": "تشارك أحيانًا في أنشطة ممتعة، لكن قد تحتاج إلى دمج المزيد من لحظات المرح في روتينك. سيؤدي إعطاء الأولوية للإبداع والضحك والتجارب التفاعلية إلى المزيد من الاسترخاء والمتعة في حياتك اليومية. يمكن أن تعزز استكشاف الهوايات أو الأنشطة الاجتماعية المرحة من رفاهيتك العاطفية."
+      },
+      "3": {
+        "en": "You maintain a moderate level of play and recreation. Finding time to regularly engage in enjoyable, lighthearted activities will help relieve stress and boost creativity. Incorporating games, art, or physical activities can keep your playful spirit alive and improve overall well-being.",
+        "ar": "تحافظ على مستوى معتدل من اللعب والاستجمام. سيساعدك تخصيص وقت للمشاركة بانتظام في أنشطة ممتعة ومرحة على تخفيف التوتر وتعزيز الإبداع. يمكن أن يؤدي دمج الألعاب أو الفنون أو الأنشطة البدنية إلى إبقاء روحك المرحة حية وتحسين رفاهيتك العامة."
+      },
+      "4": {
+        "en": "You prioritize fun and playfulness, which supports creativity and relaxation. Continuing to explore engaging and interactive activities, such as storytelling, board games, or outdoor adventures, will ensure lasting enjoyment and mental rejuvenation.",
+        "ar": "أنت تعطي الأولوية للمرح واللعب، مما يدعم الإبداع والاسترخاء. سيساعدك الاستمرار في استكشاف الأنشطة الممتعة والتفاعلية، مثل سرد القصص أو الألعاب اللوحية أو المغامرات في الهواء الطلق، في تحقيق المتعة الدائمة والانتعاش الذهني."
+      },
+      "5": {
+        "en": "Your ability to embrace playfulness enhances your joy and creativity. Encouraging spontaneity, humor, and fun in your daily life fosters emotional resilience and deeper connections. Continuing to engage in diverse and enjoyable activities will help sustain a lifelong sense of fun and fulfillment.",
+        "ar": "تعزز قدرتك على تبني اللعب المرح والسعادة والإبداع. سيؤدي تشجيع العفوية والفكاهة والمرح في حياتك اليومية إلى تعزيز المرونة العاطفية والروابط العميقة. سيساعدك الاستمرار في الانخراط في أنشطة متنوعة وممتعة في الحفاظ على شعور دائم بالمرح والإشباع."
+      }
+    }
+  },
+  "Financial Security": {
+    "en_pillar_name": "Financial Security",
+    "ar_pillar_name": "الأمان المالي",
+    "feedback": {
+      "1": {
+        "en": "Your financial situation may feel unstable, creating stress and uncertainty. Establishing a budget, tracking expenses, and prioritizing savings will help build a stronger financial foundation. Learning more about financial planning and reducing unnecessary spending can improve long-term security and peace of mind.",
+        "ar": "قد تشعر بأن وضعك المالي غير مستقر، مما يسبب التوتر وعدم اليقين. سيساعدك إنشاء ميزانية، وتتبع النفقات، وإعطاء الأولوية للادخار في بناء أساس مالي أقوى. يمكن أن يؤدي تعلم المزيد عن التخطيط المالي وتقليل الإنفاق غير الضروري إلى تحسين الأمان على المدى الطويل وراحة البال."
+      },
+      "2": {
+        "en": "You have some financial awareness but may struggle with consistency in savings or budgeting. Strengthening financial habits, such as automating savings and setting financial goals, will improve your long-term financial health. Reducing debt and making smarter investment choices will enhance financial security.",
+        "ar": "لديك بعض الوعي المالي، لكنك قد تجد صعوبة في الالتزام بالادخار أو وضع الميزانية. سيُحسّن تعزيز العادات المالية مثل الادخار التلقائي وتحديد الأهداف المالية من صحتك المالية على المدى الطويل. سيُعزز تقليل الديون واتخاذ قرارات استثمارية أكثر ذكاءً الأمان المالي."
+      },
+      "3": {
+        "en": "Your financial stability is moderate, but refining your approach to savings and investments will create stronger long-term security. Building an emergency fund, managing expenses wisely, and increasing financial literacy can help ensure stability and reduce financial stress.",
+        "ar": "استقرارك المالي متوسط، ولكن تحسين نهجك في الادخار والاستثمار سيُوفر أمانًا أقوى على المدى الطويل. يمكن أن يُساعد إنشاء صندوق طوارئ، وإدارة النفقات بحكمة، وزيادة المعرفة المالية في ضمان الاستقرار وتقليل الضغط المالي."
+      },
+      "4": {
+        "en": "You have a strong financial foundation with healthy spending and saving habits. Continuing to diversify investments, review financial plans, and adjust savings strategies as needed will help maintain financial growth and security for the future.",
+        "ar": "لديك أساس مالي قوي مع عادات إنفاق وادخار صحية. سيُساعدك الاستمرار في تنويع الاستثمارات، ومراجعة الخطط المالية، وتعديل استراتيجيات الادخار حسب الحاجة على الحفاظ على النمو المالي والأمان في المستقبل."
+      },
+      "5": {
+        "en": "Your financial security is well-established, and you have a structured plan for long-term wealth management. Keeping up with financial planning, estate planning, and strategic investments will ensure lasting financial stability and independence.",
+        "ar": "أمانك المالي راسخ، ولديك خطة منظمة لإدارة الثروة على المدى الطويل. سيساعدك الاستمرار في التخطيط المالي، وتخطيط التركات، والاستثمارات الإستراتيجية على ضمان الاستقرار المالي والاستقلالية الدائمة."
+      }
+    }
+  },
+  "Growth & Development": {
+    "en_pillar_name": "Growth & Development",
+    "ar_pillar_name": "النمو والتطور",
+    "feedback": {
+      "1": {
+        "en": "Personal growth may feel stagnant, limiting new learning opportunities. Setting small, achievable goals and seeking out educational or skill-building experiences can help create momentum. Developing self-discipline and curiosity will open doors for meaningful progress and long-term development.",
+        "ar": "قد تشعر بأن نموك الشخصي راكد، مما يحد من فرص التعلم الجديدة. سيساعدك تحديد أهداف صغيرة قابلة للتحقيق والبحث عن تجارب تعليمية أو تطوير المهارات على بناء الزخم. سيؤدي تطوير الانضباط الذاتي والفضول إلى فتح الأبواب أمام التقدم المجدي والنمو الطويل الأمد."
+      },
+      "2": {
+        "en": "You have an interest in self-improvement but may struggle with consistency or direction. Finding mentors, taking courses, and establishing structured personal goals will accelerate your growth. Regular self-reflection and a commitment to lifelong learning will enhance confidence and adaptability.",
+        "ar": "لديك اهتمام بتحسين الذات، لكنك قد تجد صعوبة في الحفاظ على الاستمرارية أو الاتجاه. سيُسرّع العثور على مرشدين، وحضور دورات، وتحديد أهداف شخصية منظمة من وتيرة نموك. سيساعدك التأمل الذاتي المنتظم والالتزام بالتعلم المستمر على تعزيز الثقة والقدرة على التكيف."
+      },
+      "3": {
+        "en": "Your personal development is progressing, and you are actively working toward improvement. Expanding your knowledge, refining skills, and seeking constructive feedback will further enhance your personal and professional growth.",
+        "ar": "تقدمك في النمو الشخصي ملحوظ، وأنت تعمل بنشاط نحو التحسن. سيساهم توسيع معرفتك، وصقل مهاراتك، والبحث عن تغذية راجعة بنّاءة في تعزيز نموك الشخصي والمهني بشكل أكبر."
+      },
+      "4": {
+        "en": "You prioritize personal development and are consistently working toward new achievements. Continuing to challenge yourself, embrace new learning opportunities, and maintain self-awareness will ensure steady progress and fulfillment.",
+        "ar": "أنت تُعطي الأولوية للنمو الشخصي وتعمل باستمرار نحو تحقيق إنجازات جديدة. سيساعدك الاستمرار في تحدي نفسك، واحتضان فرص التعلم الجديدة، والحفاظ على الوعي الذاتي في ضمان التقدم المستمر والإشباع."
+      },
+      "5": {
+        "en": "Your commitment to self-improvement is exceptional. Continuously refining your goals, mentoring others, and staying curious will ensure lifelong growth and adaptability. Leading by example and sharing knowledge with others will further enrich your personal and professional journey.",
+        "ar": "التزامك بتحسين الذات استثنائي. سيساعدك الاستمرار في تحسين أهدافك، وتوجيه الآخرين، والحفاظ على الفضول على ضمان النمو والمرونة مدى الحياة. سيُثري القيادة بالقدوة ومشاركة المعرفة مع الآخرين رحلتك الشخصية والمهنية بشكل أكبر."
+      }
+    }
+  },
+  "Career": {
+    "en_pillar_name": "Career",
+    "ar_pillar_name": "المسيرة المهنية",
+    "feedback": {
+      "1": {
+        "en": "Your career direction may feel uncertain, causing stress or lack of motivation. Setting professional goals, networking, and building relevant skills will help you gain clarity and progress in your career path.",
+        "ar": "قد تشعر بأن مسارك المهني غير واضح، مما يسبب التوتر أو نقص الحافز. سيساعدك تحديد أهداف مهنية، وبناء شبكة علاقات، وتطوير المهارات ذات الصلة في اكتساب الوضوح والتقدم في مسيرتك المهنية."
+      },
+      "2": {
+        "en": "You have some career stability but may feel a lack of fulfillment or progression. Identifying your strengths, seeking mentorship, and setting clear objectives will enhance career satisfaction and opportunities.",
+        "ar": "لديك بعض الاستقرار المهني، لكنك قد تشعر بنقص في الإشباع أو التقدم. سيساعدك تحديد نقاط قوتك، والبحث عن التوجيه المهني، وتحديد أهداف واضحة على زيادة الرضا المهني وفتح الفرص الجديدة."
+      },
+      "3": {
+        "en": "Your career is progressing steadily, but focusing on skill development, leadership growth, and networking can further accelerate professional success and job satisfaction.",
+        "ar": "تتقدم في مسيرتك المهنية بشكل ثابت، ولكن التركيز على تطوير المهارات، وتنمية القيادة، وبناء العلاقات المهنية يمكن أن يعزز نجاحك المهني ورضاك الوظيفي."
+      },
+      "4": {
+        "en": "You have built a strong career foundation. Continuing to set ambitious goals, explore leadership roles, and refine your expertise will help sustain long-term success and fulfillment.",
+        "ar": "لقد بنيت أساسًا مهنيًا قويًا. سيساعدك الاستمرار في تحديد أهداف طموحة، واستكشاف أدوار قيادية، وتحسين خبرتك في الحفاظ على النجاح والإشباع على المدى الطويل."
+      },
+      "5": {
+        "en": "Your career is well-established and thriving. Maintaining a balance between work and personal fulfillment, mentoring others, and pursuing continuous learning will ensure long-term career satisfaction and impact.",
+        "ar": "مسيرتك المهنية راسخة ومزدهرة. سيساعدك الحفاظ على التوازن بين العمل والإشباع الشخصي، وتوجيه الآخرين، والسعي إلى التعلم المستمر في ضمان رضا مهني طويل الأمد وتأثير إيجابي دائم."
+      }
+    }
+  },
+  "Environment": {
+    "en_pillar_name": "Environment",
+    "ar_pillar_name": "البيئة",
+    "feedback": {
+      "1": {
+        "en": "Your surroundings may feel cluttered or uninspiring, affecting mental clarity and productivity. Organizing your space, reducing distractions, and incorporating calming elements will improve focus and relaxation.",
+        "ar": "قد تبدو بيئتك مزدحمة أو غير ملهمة، مما يؤثر على وضوحك الذهني وإنتاجيتك. سيساعدك تنظيم المساحة، وتقليل المشتتات، وإدخال عناصر مهدئة في تحسين التركيز والاسترخاء."
+      },
+      "2": {
+        "en": "Your environment is functional but could be more supportive of well-being. Enhancing organization, improving lighting, and integrating elements that bring joy will create a more positive and peaceful atmosphere.",
+        "ar": "بيئتك عملية لكنها قد لا تدعم رفاهيتك بالشكل الأمثل. سيساهم تحسين التنظيم، وتحسين الإضاءة، وإضافة عناصر تبعث على الفرح في خلق جو أكثر إيجابية وهدوء."
+      },
+      "3": {
+        "en": "You maintain a balanced living and work environment, but small improvements, such as decluttering or adding nature elements, can enhance comfort and productivity.",
+        "ar": "تحافظ على بيئة معيشية وعملية متوازنة، لكن التحسينات البسيطة مثل التخلص من الفوضى أو إضافة عناصر طبيعية يمكن أن تعزز الراحة والإنتاجية."
+      },
+      "4": {
+        "en": "Your surroundings contribute to a healthy and productive lifestyle. Regularly updating and optimizing your space will ensure continued comfort, focus, and well-being.",
+        "ar": "تُساهم بيئتك في نمط حياة صحي ومنتج. سيُساعدك تحديث وتحسين المساحة بانتظام في ضمان الراحة والتركيز والرفاهية المستمرة."
+      },
+      "5": {
+        "en": "Your environment is well-organized, inspiring, and supports overall well-being. Maintaining a clean, structured space with positive energy will help sustain long-term mental clarity and relaxation.",
+        "ar": "بيئتك منظمة وملهمة وتدعم رفاهيتك بشكل عام. سيساعد الحفاظ على مساحة نظيفة ومنظمة وذات طاقة إيجابية في دعم وضوحك الذهني واسترخائك على المدى الطويل."
       }
     }
   }

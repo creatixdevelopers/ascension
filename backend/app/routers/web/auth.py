@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Request
 from starlette.responses import RedirectResponse
 
-from . import templates
+from app.services.templates import templates
 from app.services.auth import web_requires
 
 router = APIRouter(tags=["auth"])

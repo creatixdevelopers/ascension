@@ -3,36 +3,652 @@
     "en_pillar_name": "Nutrition",
     "ar_pillar_name": "التغذية",
     "questions": [
-      { "en": "I eat a balanced diet daily.", "ar": "أنا أتناول نظامًا غذائيًا متوازنًا يوميًا." },
-      { "en": "I drink at least 2 liters of water daily.", "ar": "أشرب ما لا يقل عن 2 لتر من الماء يوميًا." },
-      { "en": "I limit my sugar intake.", "ar": "أحد من استهلاكي للسكر." }
+      {
+        "en": "I have a clear understanding of my daily calorie needs and track my intake consistently to align with my health and performance goals.",
+        "ar": "لدي فهم واضح لاحتياجاتي اليومية من السعرات الحرارية وأقوم بتتبع استهلاكي لها باستمرار بما يتماشى مع أهدافي الصحية والأداء."
+      },
+      {
+        "en": "I prioritize understanding where my food comes from, including how it is grown, raised, and produced.",
+        "ar": "أعطي أولوية لفهم مصدر طعامي، بما في ذلك كيفية زراعته، تربيته، وإنتاجه."
+      },
+      {
+        "en": "I am mindful of the quality of my water, including its source, packaging, mineral content, and ability to properly hydrate my body.",
+        "ar": "أنا مدرك لجودة المياه التي أشربها، بما في ذلك مصدرها، وتغليفها، ومحتواها المعدني، وقدرتها على ترطيب جسمي بشكل صحيح."
+      },
+      {
+        "en": "I maintain a clean and healthy diet without feeling anxious, restricted, or overly focused on perfection.",
+        "ar": "أحافظ على نظام غذائي نظيف وصحي دون الشعور بالقلق أو التقييد أو التركيز المفرط على الكمال."
+      },
+      {
+        "en": "I do not use food as an emotional coping mechanism.",
+        "ar": "لا أستخدم الطعام كآلية للتعامل مع المشاعر أو الهروب من المشاكل."
+      },
+      {
+        "en": "I use a well-informed, testing-based approach to supplementation rather than guessing or following trends.",
+        "ar": "أستخدم نهجًا قائمًا على المعرفة والاختبارات عند تناول المكملات الغذائية بدلاً من التخمين أو اتباع الصيحات."
+      },
+      {
+        "en": "I understand that supplement quality varies and choose brands based on purity, sourcing, and effectiveness rather than marketing hype.",
+        "ar": "أفهم أن جودة المكملات الغذائية تختلف، وأختار العلامات التجارية بناءً على النقاء، والمصدر، والفعالية وليس على أساس الدعاية."
+      },
+      {
+        "en": "I understand my macronutrient needs and ensure I get the right balance of proteins, fats, and carbohydrates daily.",
+        "ar": "أفهم احتياجاتي من المغذيات الكبيرة (البروتينات، الدهون، الكربوهيدرات)، وأحرص على تحقيق التوازن الصحيح بينها يوميًا."
+      },
+      {
+        "en": "I eat at consistent, appropriate times and ensure I don’t skip meals, supporting my energy and well-being.",
+        "ar": "أتناول الطعام في أوقات منتظمة ومناسبة وأتأكد من عدم تفويت أي وجبة لدعم طاقتي وصحتي."
+      },
+      {
+        "en": "I choose to avoid alcohol because I understand its negative impact on my health, performance, and well-being.",
+        "ar": "أختار تجنب الكحول لأنني أفهم تأثيره السلبي على صحتي وأدائي وراحتي العامة."
+      },
+      {
+        "en": "I choose to avoid sugar because I understand its negative impact on my health, performance, and well-being.",
+        "ar": "أختار تجنب السكر لأنني أفهم تأثيره السلبي على صحتي وأدائي وراحتي العامة."
+      },
+      {
+        "en": "I clear my environment from any distractions so I can eat consciously and connect with my food energetically.",
+        "ar": "أزيل أي مصادر تشتيت من حولي أثناء تناول الطعام لكي أتناول طعامي بوعي وأتواصل معه طاقيًا."
+      },
+      {
+        "en": "I honor my body as a sacred vessel by consuming foods that align with my spiritual beliefs and promote vitality.",
+        "ar": "أكرم جسدي كأمانة مقدسة من خلال تناول الأطعمة التي تتماشى مع معتقداتي الروحية وتعزز حيويتي."
+      },
+      {
+        "en": "I feel great after eating, there's no bloating or acid reflux or anything else that makes me feel unwell or sluggish.",
+        "ar": "أشعر بشعور رائع بعد تناول الطعام، ولا أعاني من الانتفاخ أو الحموضة أو أي شيء يجعلني أشعر بالتعب أو الانزعاج."
+      },
+      {
+        "en": "I align my eating habits with my circadian rhythm to optimize digestion, energy, and recovery.",
+        "ar": "أوائم عاداتي الغذائية مع إيقاع الساعة البيولوجية الخاصة بي لتحسين الهضم والطاقة والتعافي."
+      },
+      {
+        "en": "I prioritize gut health by consuming probiotic and fiber-rich foods that support digestion and immunity.",
+        "ar": "أعطي أولوية لصحة الأمعاء من خلال تناول الأطعمة الغنية بالبروبيوتيك والألياف التي تدعم الهضم والمناعة."
+      },
+      {
+        "en": "I view food as an ally to my mental clarity and emotional stability, not just my physical health.",
+        "ar": "أرى الطعام كحليف يساعدني في وضوح ذهني واستقراري العاطفي، وليس فقط لصحة جسدي."
+      }
     ]
   },
   "Relationships": {
     "en_pillar_name": "Relationships",
     "ar_pillar_name": "العلاقات",
     "questions": [
-      { "en": "I feel supported by my family.", "ar": "أشعر بالدعم من عائلتي." },
-      { "en": "I have strong friendships.", "ar": "لدي صداقات قوية." },
-      { "en": "I express my feelings openly.", "ar": "أعبر عن مشاعري بصراحة." }
+      {
+        "en": "I clearly communicate my needs and limits in relationships, ensuring that others respect my personal space and well-being.",
+        "ar": "أتواصل بوضوح بشأن احتياجاتي وحدودي في العلاقات، وأتأكد من أن الآخرين يحترمون مساحتي الشخصية وراحتي النفسية."
+      },
+      {
+        "en": "I prioritize my own needs above all else and well-being without feeling guilt or shame.",
+        "ar": "أعطي الأولوية لاحتياجاتي وراحتي النفسية فوق كل شيء دون أن أشعر بالذنب أو العار."
+      },
+      {
+        "en": "I see prioritizing myself as essential to becoming my best self for others.",
+        "ar": "أرى أن إعطاء الأولوية لنفسي ضروري لأصبح أفضل نسخة من نفسي من أجل الآخرين."
+      },
+      {
+        "en": "My partner and I support each other’s growth and individual journeys.",
+        "ar": "أنا وشريكي ندعم بعضنا البعض في النمو والرحلة الفردية لكل منا."
+      },
+      {
+        "en": "I take responsibility for my own happiness rather than expecting my partner to fulfill me.",
+        "ar": "أتحمل مسؤولية سعادتي الخاصة بدلاً من توقع أن يكملني شريكي."
+      },
+      {
+        "en": "My relationship aligns with my values, vision, and deeper sense of purpose.",
+        "ar": "علاقتي تتماشى مع قيمي ورؤيتي وإحساسي العميق بالهدف."
+      },
+      {
+        "en": "I am aware of my triggers in all relationships and take them as an opportunity to learn more about myself.",
+        "ar": "أنا مدرك لمحفزاتي (Triggers) في جميع علاقاتي وأعتبرها فرصة لفهم نفسي بشكل أعمق."
+      },
+      {
+        "en": "I model the behaviors and values I want my child to embody.",
+        "ar": "أُجسّد السلوكيات والقيم التي أرغب أن يكتسبها طفلي."
+      },
+      {
+        "en": "I prioritize my own growth and healing, knowing it directly impacts my parenting.",
+        "ar": "أعطي الأولوية لنموي الشخصي وشفائي، مدركًا أن ذلك يؤثر مباشرة على أسلوبي في التربية."
+      },
+      {
+        "en": "I see parenting as a mutual journey of growth, learning as much from my child as they do from me.",
+        "ar": "أرى التربية كرحلة مشتركة للنمو، أتعلم من طفلي بقدر ما يتعلم مني."
+      },
+      {
+        "en": "I am surrounded by a supportive tribe that uplifts, inspires, and aligns with my values.",
+        "ar": "أنا محاط بدائرة دعم ترفعني وتلهمني وتتوافق مع قيمي."
+      },
+      {
+        "en": "In general I don’t have any major stress from my relationship with my immediate family.",
+        "ar": "بشكل عام، لا أشعر بأي توتر كبير في علاقتي مع عائلتي المباشرة."
+      },
+      {
+        "en": "In general I don't have any major stress from my relationship with my friends.",
+        "ar": "بشكل عام، لا أشعر بأي توتر كبير في علاقتي مع أصدقائي."
+      },
+      {
+        "en": "I am able to receive love, appreciation, and support without resistance or discomfort.",
+        "ar": "أستطيع تلقي الحب والتقدير والدعم دون مقاومة أو شعور بعدم الارتياح."
+      },
+      {
+        "en": "I have worked through past relationship wounds and do not let them dictate my current relationships.",
+        "ar": "تعاملت مع جروحي العاطفية الناتجة عن علاقات سابقة، ولا أسمح لها بالتأثير على علاقاتي الحالية."
+      },
+      {
+        "en": "I do not feel the need to ‘fix’ or control others in my relationships.",
+        "ar": "لا أشعر بالحاجة إلى \"إصلاح\" أو السيطرة على الآخرين في علاقاتي."
+      }
     ]
   },
   "Movement & Exercise": {
     "en_pillar_name": "Movement & Exercise",
     "ar_pillar_name": "الحركة والتمارين",
     "questions": [
-      { "en": "I exercise at least 3 times a week.", "ar": "أمارس الرياضة 3 مرات في الأسبوع على الأقل." },
-      { "en": "I include stretching in my routine.", "ar": "أقوم بتمارين التمدد في روتيني." },
-      { "en": "I engage in physical activities I enjoy.", "ar": "أشارك في أنشطة بدنية أستمتع بها." }
+      {
+        "en": "I have a balanced approach to exercise, avoiding both overtraining and inactivity.",
+        "ar": "أتّبع نهجًا متوازنًا في ممارسة التمارين الرياضية، متجنبًا كلًا من الإفراط في التدريب والخمول."
+      },
+      {
+        "en": "I feel strong, capable, and physically confident in my daily activities.",
+        "ar": "أشعر بالقوة والقدرة والثقة الجسدية في أنشطتي اليومية."
+      },
+      {
+        "en": "I use movement practices (like yoga, flow, or stretching) to help regulate my nervous system.",
+        "ar": "أستخدم ممارسات الحركة (مثل اليوغا، أو التدفق، أو التمدد) لمساعدة جسمي في تنظيم الجهاز العصبي."
+      },
+      {
+        "en": "I have an exercise routine that enhances my sleep quality rather than disrupts it.",
+        "ar": "لدي روتين رياضي يحسن جودة نومي بدلاً من التأثير السلبي عليها."
+      },
+      {
+        "en": "I understand how movement impacts my hormone levels, mood, and overall stress resilience.",
+        "ar": "أفهم كيف تؤثر الحركة على مستويات الهرمونات والمزاج والقدرة على مقاومة التوتر."
+      },
+      {
+        "en": "I approach exercise as a long-term, sustainable practice rather than chasing quick results.",
+        "ar": "أتعامل مع التمارين الرياضية كممارسة طويلة الأمد ومستدامة وليس كوسيلة لتحقيق نتائج سريعة."
+      },
+      {
+        "en": "I prioritize working out for my health and well-being rather than for appearance or external validation.",
+        "ar": "أُعطي الأولوية لممارسة الرياضة من أجل صحتي وليس من أجل المظهر أو البحث عن التقدير الخارجي."
+      },
+      {
+        "en": "I understand that intense exercise is induced stress and I create strategies to not have this add to my accumulated stress.",
+        "ar": "أفهم أن التمارين المكثفة هي نوع من التوتر المُستَحث، وأضع استراتيجيات لتجنّب تراكم هذا التوتر مع الإجهاد الموجود أصلًا."
+      },
+      {
+        "en": "I listen to my body and adjust my movement routine based on how I feel, rather than forcing myself to push through stress or fatigue.",
+        "ar": "أستمع إلى جسدي وأعدل روتين التمارين حسب شعوري، بدلاً من إجبار نفسي على الاستمرار وسط التعب أو الإجهاد."
+      },
+      {
+        "en": "I engage in physical activity that I genuinely enjoy, rather than seeing it as an obligation or chore.",
+        "ar": "أمارس الأنشطة البدنية التي أستمتع بها فعلًا، وليس كواجب أو عبء."
+      },
+      {
+        "en": "I incorporate VO2 Max training in my routine.",
+        "ar": "أمارس تدريبات القدرة الهوائية القصوى (VO2 Max) ضمن روتيني."
+      },
+      {
+        "en": "I incorporate strength in my routine.",
+        "ar": "أمارس تمارين القوة ضمن روتيني."
+      },
+      {
+        "en": "I incorporate cardio in my routine.",
+        "ar": "أمارس التمارين اللياقة القلبية (كارديو) ضمن روتيني."
+      },
+      {
+        "en": "I incorporate low level activities in my routine (walking, gentle swims … etc.).",
+        "ar": "أمارس الأنشطة الخفيفة ضمن روتيني (مثل المشي، السباحة الخفيفة، ...إلخ)."
+      },
+      {
+        "en": "I take enough days off to recuperate and have no guilt or shame associated with that.",
+        "ar": "آخذ أيام راحة كافية للتعافي دون الشعور بالذنب أو العار."
+      },
+      {
+        "en": "I am motivated to become fitter and stronger by positive energy and self-improvement, rather than by self-criticism or dissatisfaction with myself.",
+        "ar": "أشعر بالتحفيز لأصبح أكثر لياقة وقوة بدافع من الطاقة الإيجابية وتطوير الذات، وليس من خلال الانتقاد الذاتي أو الشعور بعدم الرضا عن نفسي."
+      },
+      {
+        "en": "I prioritize time for movement and exercise daily, setting it as a non-negotiable boundary that isn’t sacrificed for others’ demands.",
+        "ar": "أُخصص وقتًا يوميًا للحركة والتمارين، وأضعها كأولوية لا يمكن التنازل عنها أمام طلبات الآخرين."
+      }
     ]
   },
   "Sleep & Recovery": {
     "en_pillar_name": "Sleep & Recovery",
     "ar_pillar_name": "النوم والتعافي",
     "questions": [
-      { "en": "I sleep at least 7 hours every night.", "ar": "أنام 7 ساعات على الأقل كل ليلة." },
-      { "en": "I wake up feeling refreshed.", "ar": "أستيقظ وأنا أشعر بالانتعاش." },
-      { "en": "I avoid screens before bed.", "ar": "أتجنب الشاشات قبل النوم." }
+      {
+        "en": "I wake up feeling well-rested and refreshed most mornings.",
+        "ar": "أستيقظ في معظم الايام وأنا أشعر بالراحة والانتعاش."
+      },
+      {
+        "en": "I prioritize getting enough sleep, even when life gets busy.",
+        "ar": "أُعطي أولوية كافية للنوم حتى عندما تكون الحياة مزدحمة."
+      },
+      {
+        "en": "I fall asleep easily without tossing, turning, or overthinking.",
+        "ar": "أنام بسهولة دون تقلب أو تفكير مفرط."
+      },
+      {
+        "en": "I sleep through the night without frequent awakenings.",
+        "ar": "أنام طوال الليل دون الاستيقاظ المتكرر."
+      },
+      {
+        "en": "I have a consistent sleep schedule that supports my body’s natural rhythm.",
+        "ar": "لدي جدول نوم منتظم يدعم الإيقاع الطبيعي لجسمي."
+      },
+      {
+        "en": "I avoid screen time and stimulating activities before bed to improve sleep quality.",
+        "ar": "أتجنب استخدام الشاشات والأنشطة المحفزة قبل النوم لتحسين جودة نومي."
+      },
+      {
+        "en": "I wind down properly in the evening to signal to my body that it’s time to rest.",
+        "ar": "أُخصص وقتًا للاسترخاء في المساء لإعطاء إشارة لجسدي بأن وقت الراحة قد حان."
+      },
+      {
+        "en": "I manage stress effectively so it doesn’t interfere with my ability to recover.",
+        "ar": "أُدير التوتر بفعالية حتى لا يؤثر على قدرتي على التعافي."
+      },
+      {
+        "en": "I engage in activities like breathwork, meditation, or stretching to aid recovery.",
+        "ar": "أمارس أنشطة مثل تمارين التنفس، التأمل، أو التمدد للمساعدة في التعافي."
+      },
+      {
+        "en": "I allow myself to take breaks throughout the day instead of constantly being ‘on’.",
+        "ar": "أسمح لنفسي بأخذ فترات راحة خلال اليوم بدلاً من أن أكون في حالة نشاط دائم."
+      },
+      {
+        "en": "I prioritize sleep and recovery just as much as I do movement and nutrition.",
+        "ar": "أُعطي النوم والتعافي نفس أهمية التمارين الرياضية والتغذية."
+      },
+      {
+        "en": "I create a sleep-friendly environment that is dark, cool, and quiet.",
+        "ar": "أخلق بيئة مناسبة للنوم تكون مظلمة وباردة وهادئة."
+      },
+      {
+        "en": "I avoid relying on caffeine or stimulants to compensate for poor sleep.",
+        "ar": "أتجنب الاعتماد على الكافيين أو المنشطات لتعويض قلة النوم."
+      },
+      {
+        "en": "I have no shame or guilt associated with taking days off or time off during the day to disconnect and recover when I need it.",
+        "ar": "لا أشعر بأي ذنب أو خجل من أخذ إجازة أو وقت راحة أثناء اليوم عندما أحتاج لذلك."
+      },
+      {
+        "en": "I have a night routine that allows me to clear my thoughts and negative feelings associated with it before I wind down to sleep.",
+        "ar": "لدي روتين مسائي يساعدني على تصفية أفكاري ومشاعري السلبية قبل النوم."
+      },
+      {
+        "en": "I track my sleep and recovery habits to ensure I am optimizing my well-being.",
+        "ar": "أتابع عاداتي في النوم والتعافي لأتأكد من أنني أدعم صحتي وراحتي بأفضل شكل ممكن."
+      }
+    ]
+  },
+  "Spirituality": {
+    "en_pillar_name": "Spirituality",
+    "ar_pillar_name": "الروحانية",
+    "questions": [
+      {
+        "en": "I have a clear sense of purpose that guides my decisions and actions.",
+        "ar": "لدي إحساس واضح بغايتي الروحية يوجه قراراتي وتصرفاتي."
+      },
+      {
+        "en": "I feel deeply connected to something greater than myself, whether it be a higher power, universal energy, or inner wisdom.",
+        "ar": "أشعر بارتباط عميق بشيء أكبر من نفسي، سواء كان قوة الاهية، طاقة كونية، أو حكمة داخلية."
+      },
+      {
+        "en": "My daily actions and habits align with my deeper mission in life.",
+        "ar": "تتماشى أفعالي وعادتي اليومية مع مهمتي الأعمق في الحياة."
+      },
+      {
+        "en": "I recognize that my well-being—physical, mental, and emotional—is deeply connected to my spiritual health.",
+        "ar": "أدرك أن جودة الحياة - الجسدية والعقلية والعاطفية - مرتبطة ارتباطًا وثيقًا بصحتي الروحية."
+      },
+      {
+        "en": "I regularly engage in practices (such as meditation, prayer, or reflection) that keep me connected to my spiritual path.",
+        "ar": "أشارك بانتظام في ممارسات (مثل التأمل، الصلاة، أو التفكر) التي تبقيني متصلًا بطريقي الروحي."
+      },
+      {
+        "en": "I see challenges and obstacles as opportunities for spiritual growth rather than as setbacks.",
+        "ar": "أرى التحديات والعقبات كفرص للنمو النفسي بدلاً من أن تكون انتكاسات."
+      },
+      {
+        "en": "I feel a strong sense of inner peace regardless of external circumstances.",
+        "ar": "أشعر بإحساس قوي بالسلام الداخلي بغض النظر عن الظروف الخارجية."
+      },
+      {
+        "en": "I trust in the flow of life and surrender to things I cannot control.",
+        "ar": "أثق في تدفق الحياة وأستسلم للأشياء التي لا أستطيع التحكم فيها."
+      },
+      {
+        "en": "I live in alignment with my core values and beliefs, even when it’s difficult.",
+        "ar": "أعيش بما يتماشى مع قيمي ومعتقداتي الأساسية، حتى عندما يكون الأمر صعبًا."
+      },
+      {
+        "en": "I experience a deep sense of fulfillment and meaning in my life.",
+        "ar": "أشعر بإحساس عميق بالإنجاز والمعنى في حياتي."
+      },
+      {
+        "en": "I feel connected to the present moment rather than being consumed by past regrets or future worries.",
+        "ar": "أشعر بالتواصل باللحظة الحالية بدلاً من أن أكون مغمورًا بالندم على الماضي أو القلق بشأن المستقبل."
+      },
+      {
+        "en": "I practice gratitude daily and recognize the abundance in my life.",
+        "ar": "أمارس الحمد يوميًا وأدرك الوفرة والنعمه في حياتي."
+      },
+      {
+        "en": "My career, relationships, and lifestyle reflect my spiritual values.",
+        "ar": "تعكس حياتي المهنية وعلاقاتي وأسلوب حياتي قيمي الروحية."
+      },
+      {
+        "en": "I prioritize activities that nourish my soul, rather than just focusing on material success or external achievements.",
+        "ar": "أُعطي الأولوية للأنشطة التي تغذي روحي، بدلاً من التركيز فقط على النجاح المادي أو الإنجازات الخارجية."
+      },
+      {
+        "en": "I listen to and trust my intuition when making important life decisions.",
+        "ar": "أستمع إلى حدسي وأثق فيه عندما أتخذ قرارات حياتية هامة."
+      },
+      {
+        "en": "I view my life as a journey of continuous growth, evolution, and self-discovery.",
+        "ar": "أرى حياتي كرحلة مستمرة من النمو والتطور واكتشاف الذات."
+      },
+      {
+        "en": "I understand that control comes from fear and real empowerment lies in surrender.",
+        "ar": "أفهم أن السيطرة تأتي من الخوف، وأن التمكين الحقيقي يكمن في الاستسلام."
+      },
+      {
+        "en": "I trust in the unknown and have faith that life is unfolding as it should, even when I don’t have all the answers.",
+        "ar": "أثق في المجهول وأؤمن أن الحياة تتجلى كما ينبغي، حتى عندما لا أملك كل الإجابات."
+      }
+    ]
+  },
+  "Child Play": {
+    "en_pillar_name": "Child Play",
+    "ar_pillar_name": "لعب الطفولة",
+    "questions": [
+      {
+        "en": "I make time for fun and play, even when life feels busy or stressful.",
+        "ar": "أخصص وقتًا للمرح واللعب، حتى عندما تكون الحياة مليئة بالانشغال أو التوتر."
+      },
+      {
+        "en": "I laugh easily and find joy in small, everyday moments.",
+        "ar": "أضحك بسهولة وأجد السعادة في اللحظات الصغيرة اليومية."
+      },
+      {
+        "en": "I can be silly and playful without feeling self-conscious or worrying about what others think.",
+        "ar": "يمكنني أن أكون هزليًا ومرحًا دون أن أشعر بالخجل أو القلق بشأن ما يظنه الآخرون."
+      },
+      {
+        "en": "I can fully enjoy myself and have fun without needing stimulants like alcohol, caffeine, or other substances.",
+        "ar": "أستطيع الاستمتاع بنفسي بالكامل والمرح دون الحاجة إلى المنبهات مثل الكحول أو الكافيين أو غيرها من المواد."
+      },
+      {
+        "en": "I engage in hobbies or activities purely for fun, without any pressure to be ‘productive.’",
+        "ar": "أمارس هوايات أو أنشطة من أجل المتعة فقط، دون أي ضغط لأن أكون \"منتجًا\"."
+      },
+      {
+        "en": "I am spontaneous and open to unexpected adventures instead of rigidly sticking to plans all the time.",
+        "ar": "أنا عفوي و مستعد لاحتضان المغامرات غير المتوقعة بدلاً من الالتزام الصارم بالخطط طوال الوقت."
+      },
+      {
+        "en": "I see fun and relaxation as essential to success and high performance, not as a distraction from it.",
+        "ar": "أرى أن المرح والاسترخاء أساسيان للنجاح والأداء العالي، وليس كتشتت عنهم."
+      },
+      {
+        "en": "I spend time with people who encourage playfulness, laughter, and joy.",
+        "ar": "أمضي وقتًا مع الأشخاص الذين يشجعون على اللعب والضحك والسعادة."
+      },
+      {
+        "en": "I give myself permission to be a beginner and enjoy learning new things without pressure.",
+        "ar": "أمنح نفسي الإذن لأن أكون مبتدئًا وأستمتع بتعلم أشياء جديدة دون ضغط نفسي."
+      },
+      {
+        "en": "I embrace my inner child by doing things I used to love as a kid.",
+        "ar": "أحتضن طفلي الداخلي من خلال القيام بالأشياء التي كنت أحبها عندما كنت صغيرًا."
+      }
+    ]
+  },
+  "Financial Security": {
+    "en_pillar_name": "Financial Security",
+    "ar_pillar_name": "الأمان المالي",
+    "questions": [
+      {
+        "en": "I feel in control of my financial situation and money management.",
+        "ar": "أشعر أنني مسيطر على وضعي المالي وإدارة أموالي."
+      },
+      {
+        "en": "I have a clear financial plan and follow it consistently.",
+        "ar": "لدي خطة مالية واضحة وألتزم بها بشكل مستمر."
+      },
+      {
+        "en": "I save and invest regularly for both short-term and long-term security.",
+        "ar": "أدخر وأستثمر بانتظام من أجل الأمان المالي على المدى القصير والطويل."
+      },
+      {
+        "en": "I rarely feel stressed or anxious about money and financial responsibilities.",
+        "ar": "نادرًا ما أشعر بالتوتر أو القلق بشأن المال والمسؤوليات المالية."
+      },
+      {
+        "en": "I live within my means and do not rely on debt to sustain my lifestyle.",
+        "ar": "أعيش ضمن إمكانياتي ولا أعتمد على الديون للحفاظ على نمط حياتي."
+      },
+      {
+        "en": "I have an emergency fund that makes me feel financially secure.",
+        "ar": "لدي مدخرات طوارئ يجعلني أشعر بالأمان المالي."
+      },
+      {
+        "en": "I understand where my money goes each month and track my spending effectively.",
+        "ar": "اعلم أين تذهب أموالي كل شهر وأتابع إنفاقي بشكل فعال."
+      },
+      {
+        "en": "I do not feel pressured to spend money to impress others or maintain a certain image.",
+        "ar": "لا أشعر بالضغط لإنفاق المال من أجل إبهار الآخرين أو الحفاظ على صورة معينة."
+      },
+      {
+        "en": "I have a healthy relationship with money, seeing it as a tool for freedom rather than a source of stress.",
+        "ar": "لدي علاقة صحية مع المال، أراه أداة للحرية وليس مصدرًا للتوتر."
+      },
+      {
+        "en": "I feel confident in my ability to retire comfortably when the time comes.",
+        "ar": "أشعر بالثقة في قدرتي على التقاعد بشكل مريح عندما يحين الوقت."
+      },
+      {
+        "en": "I continuously educate myself about financial growth and wealth-building strategies.",
+        "ar": "أواصل تعليم نفسي حول استراتيجيات النمو المالي وبناء الثروة."
+      },
+      {
+        "en": "I feel financially independent and do not rely on others for stability.",
+        "ar": "أشعر بالاستقلال المالي ولا أعتمد على الآخرين من أجل الاستقرار."
+      },
+      {
+        "en": "I do not let financial worries negatively impact my mental, emotional, or physical well-being.",
+        "ar": "لا أسمح للمخاوف المالية أن تؤثر سلبًا على صحتي العقلية أو العاطفية أو البدنية."
+      },
+      {
+        "en": "I see financial security as a key pillar of my overall freedom, success, and peace of mind.",
+        "ar": "أرى الأمان المالي كركيزة أساسية لحرّيتي العامة ونجاحي وراحتي النفسية."
+      },
+      {
+        "en": "I have clear systems and processes in place to track my spending habits, analyze patterns, and make informed adjustments to improve my financial health.",
+        "ar": "لدي أنظمة وعمليات واضحة لتتبع عادات إنفاقي، وتحليل الأنماط، وإجراء التعديلات المدروسة لتحسين صحتي المالية."
+      },
+      {
+        "en": "I communicate openly and effectively about finances with my partner, ensuring that money is a source of alignment rather than conflict or stress.",
+        "ar": "أتواصل بصراحة وفعالية بشأن الأمور المالية مع شريكي، مما يضمن أن يكون المال مصدر توافق وليس صراعًا أو توترًا."
+      },
+      {
+        "en": "I have an abundance mindset, believing that financial opportunities are available to me rather than feeling stuck in scarcity.",
+        "ar": "لدي عقلية الوفرة، أؤمن بأن الفرص المالية متاحة لي بدلاً من الشعور بأنني عالق في ندرة."
+      },
+      {
+        "en": "I am working toward financial independence, not just financial stability.",
+        "ar": "أعمل نحو الاستقلال المالي، وليس فقط الاستقرار المالي."
+      }
+    ]
+  },
+  "Growth & Development": {
+    "en_pillar_name": "Growth & Development",
+    "ar_pillar_name": "النمو والتطور",
+    "questions": [
+      {
+        "en": "I am continuously learning and expanding my knowledge to improve my life.",
+        "ar": "أنا أتعلم باستمرار وأوسّع معرفتي لتحسين حياتي."
+      },
+      {
+        "en": "I manage setbacks and failures with a growth mindset, seeing them as lessons rather than sources of stress.",
+        "ar": "أتعامل مع التحديات والإخفاقات بعقلية نمو، معتبرًا إياها دروسًا بدلاً من كونها مصادر للتوتر."
+      },
+      {
+        "en": "If we don’t grow we slowly die.",
+        "ar": "إذا لم ننمو، فإننا نموت ببطء."
+      },
+      {
+        "en": "I regularly step outside my comfort zone to evolve into an even stronger version of myself.",
+        "ar": "أخرج بانتظام من منطقة راحتي لأتطور إلى نسخة أقوى من نفسي."
+      },
+      {
+        "en": "I feel in control of my personal growth rather than feeling stuck or stagnant.",
+        "ar": "أشعر بأنني أتحكم في نموي الشخصي بدلاً من الإحساس بالركود الذاتي ."
+      },
+      {
+        "en": "I invest money, time and energy into developing new skills that support my long-term goals.",
+        "ar": "أستثمر المال والوقت والطاقة في تطوير مهارات جديدة تدعم أهدافي طويلة الأمد."
+      },
+      {
+        "en": "I seek mentorship, coaching, or guidance from those who can accelerate my development.",
+        "ar": "أبحث عن الإرشاد أو التدريب أو المشورة من أولئك الذين يمكنهم تسريع تطوري."
+      },
+      {
+        "en": "I surround myself with people who challenge and inspire me to become better.",
+        "ar": "أحيط نفسي بأشخاص يتحدونني ويُلهمونني لأصبح أفضل."
+      },
+      {
+        "en": "I consume books, podcasts, or courses that contribute to my personal and professional development.",
+        "ar": "أستهلك الكتب أوالبودكاست أو الدورات التي تساهم في تطوري الشخصي والمهني."
+      },
+      {
+        "en": "I take full responsibility for my growth rather than blaming circumstances or external factors.",
+        "ar": "أتحمل المسؤولية الكاملة عن نموي بدلاً من إلقاء اللوم على الظروف أو العوامل الخارجية."
+      },
+      {
+        "en": "I approach new situations with curiosity and adaptability rather than resistance or fear.",
+        "ar": "أتعامل مع المواقف الجديدة بفضول ومرونة بدلاً من المقاومة أو الخوف."
+      },
+      {
+        "en": "I recognize when I need to upgrade my mindset, knowledge, or skills and take action to do so.",
+        "ar": "أدرك عندما أحتاج إلى تحديث عقليتي أو معرفتي أو مهاراتي وأتخذ الإجراءات اللازمة لتحقيق ذلك."
+      },
+      {
+        "en": "I see personal growth as a lifelong journey and an essential part of my fulfillment and success.",
+        "ar": "أرى النمو الشخصي كرحلة مدى الحياة وجزء أساسي من تحقيقي للنجاح والرفاهية."
+      },
+      {
+        "en": "I apply my personal growth to all areas of my life, ensuring balance across health, career, relationships, and spirituality.",
+        "ar": "أطبق نموي الشخصي في جميع مجالات حياتي، لضمان التوازن بين الصحة، والعمل، والعلاقات، والروحانية."
+      }
+    ]
+  },
+  "Career": {
+    "en_pillar_name": "Career",
+    "ar_pillar_name": "المسيرة المهنية",
+    "questions": [
+      {
+        "en": "I feel fulfilled and engaged in the work that I do.",
+        "ar": "أشعر بالإنجاز والمشاركة في العمل الذي أؤديه."
+      },
+      {
+        "en": "My career aligns with my strengths, values, and long-term vision.",
+        "ar": "تتماشى مسيرتي المهنية مع قوتي، وقيمي، ورؤيتي طويلة المدى."
+      },
+      {
+        "en": "I experience little to no stress or burnout from my job.",
+        "ar": "لا أشعر بالكثير من التوتر أو الإرهاق من عملي."
+      },
+      {
+        "en": "I feel valued and recognized for my contributions at work.",
+        "ar": "أشعر بالتقدير والاعتراف بمساهماتي في العمل."
+      },
+      {
+        "en": "My work environment is positive, supportive, and helps me thrive.",
+        "ar": "بيئة عملي إيجابية وداعمة، وتساعدني على الازدهار."
+      },
+      {
+        "en": "I do not rely on my career for my sense of self-worth or identity.",
+        "ar": "لا أعتمد على مسيرتي المهنية لشعوري بقيمتي الذاتية أو هويتي."
+      },
+      {
+        "en": "I feel a strong sense of purpose in my work and believe it makes a meaningful impact.",
+        "ar": "أشعر بإحساس قوي بهدفي الروحي في عملي وأعتقد أنه يحدث تأثيرًا ذو وقع."
+      },
+      {
+        "en": "I can set and enforce boundaries at work to protect my time and energy.",
+        "ar": "أستطيع تحديد وتنفيذ حدودي الشخصية في العمل لحماية وقتي وطاقتي."
+      },
+      {
+        "en": "I have the flexibility to take breaks or time off when needed without guilt.",
+        "ar": "لدي مرونة لأخذ فترات راحة أو إجازات وقت الحاجة، دون الشعور بالذنب."
+      },
+      {
+        "en": "I have strong, supportive relationships with colleagues, mentors, or business partners.",
+        "ar": "لدي علاقات قوية وداعمة مع الزملاء أو المرشدين أو شركاء الأعمال."
+      },
+      {
+        "en": "I am not stuck in a job that drains me—I have the power to change or grow.",
+        "ar": "لست عالقًا في وظيفة تستنزفني—لدي القدرة على التغيير أو النمو."
+      },
+      {
+        "en": "I continuously develop new skills to stay competitive and adaptable in my field.",
+        "ar": "أطور مهارات جديدة باستمرار للبقاء تنافسيًا وقادرًا على التكيف في مجالي."
+      },
+      {
+        "en": "I believe my work has a lasting impact, and I am building a legacy beyond just a paycheck.",
+        "ar": "أعتقد أن عملي له تأثير دائم، وأنا أبني إرثًا يتجاوز مجرد الراتب."
+      }
+    ]
+  },
+  "Environment": {
+    "en_pillar_name": "Environment",
+    "ar_pillar_name": "البيئة",
+    "questions": [
+      {
+        "en": "I am mindful of my exposure to environmental toxins (air pollution, mold, chemicals, EMFs) and take steps to minimize them.",
+        "ar": "أنا مدرك لتعرضي للسموم البيئية (تلوث الهواء، العفن، المواد الكيميائية، المجالات الكهرومغناطيسية) وأتخذ خطوات لتقليص هذا التعرض."
+      },
+      {
+        "en": "I have access to clean, high-quality air and water in my living and working spaces.",
+        "ar": "لدي إمكانية الوصول إلى هواء وماء نظيفين وعاليين الجودة في مساحات معيشتي وعملي."
+      },
+      {
+        "en": "I minimize my exposure to artificial lighting and blue light, especially in the evening, to protect my sleep and well-being.",
+        "ar": "أقلل من تعرضي للإضاءة الاصطناعية والضوء الأزرق، خاصة في المساء، لحماية نومي وصحتي."
+      },
+      {
+        "en": "I am aware of how my environment affects my physical health (posture, air quality, lighting, noise levels, etc.) and take steps to protect myself and my family.",
+        "ar": "أنا مدرك كيف تؤثر بيئتي على صحتي الجسدية (مثل وضعية الجسم، جودة الهواء، الإضاءة، مستويات الضوضاء، إلخ) وأتخذ خطوات لحماية نفسي وعائلتي."
+      },
+      {
+        "en": "I limit prolonged exposure to screens, devices, and EMFs and create tech-free spaces when needed.",
+        "ar": "أُحدد من التعرض الطويل للشاشات والأجهزة والمجالات الكهرومغناطيسية وأخلق مساحات خالية من التكنولوجيا عند الحاجة."
+      },
+      {
+        "en": "I spend enough time in natural environments (outdoor spaces, fresh air, green spaces) to support my mental and physical well-being.",
+        "ar": "أمضي وقتًا كافيًا في بيئات طبيعية (المساحات الخارجية، الهواء الطلق، المساحات الخضراء) لدعم صحتي النفسية والجسدية."
+      },
+      {
+        "en": "My home and workspace are set up to maximize focus, productivity, and high performance.",
+        "ar": "تم إعداد منزلي ومساحة عملي لتعظيم التركيز والإنتاجية والأداء العالي."
+      },
+      {
+        "en": "I surround myself with objects, colors, and designs that inspire creativity and motivation.",
+        "ar": "أحيط نفسي بأشياء وألوان وتصاميم تلهم الإبداع والتحفيز."
+      },
+      {
+        "en": "I have control over my environment and can make adjustments to optimize it for my needs.",
+        "ar": "لدي القدرة على التحكم في بيئتي ويمكنني إجراء التعديلات لتحسينها وفقًا لاحتياجاتي."
+      }
     ]
   }
 }

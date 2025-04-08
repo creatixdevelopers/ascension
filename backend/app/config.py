@@ -33,18 +33,22 @@ class Settings(BaseSettings):
 
     access_token_expires: int = 60 * 60  # 1 hour
     refresh_token_expires: int = 60 * 60 * 24  # 24 hours
-
     web_access_token_expires: int = 60 * 60 * 24 * 7  # 7 days
 
     SECRET_KEY: str = "yCMLSIKvb8JF29JjxXVRu69pvRvkoAgL1mMJABbJgOQ"
     DATABASE_URI: str = f"sqlite:///{str((_project_dir / 'app.db').resolve())}"
 
-    QUIZ_ID: str = "zWPa15oNvBxkEfulAqRQZOL"
-
     STRIPE_API_KEY: str = "sk_test_51MqVuLCh3WlIvSBdsFGBsVnm6Z0QtfIuYmm3PhLt8Iy1pIF6UQdwpT3iBJYK2NSl4IGmfXEy72WCqx0j3w8P62WT00AjOmd6wO"
     STRIPE_WEBHOOK_SECRET: str = (
         "whsec_c7ae64dac770c733af0c37aead189504441c5f79db2e2d1e069eaced8bf19a91"
     )
+
+    MAIL_USERNAME: str = "info@theascension.co"
+    MAIL_PASSWORD: str = ""
+
+    QUIZ_ID: str = "zWPa15oNvBxkEfulAqRQZOL"
+
+    DOMAIN: str = "http://localhost:8000"
 
 
 settings = Settings()

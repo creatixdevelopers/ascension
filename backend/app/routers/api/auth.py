@@ -1,6 +1,7 @@
 from datetime import timedelta
 
-from fastapi import APIRouter, Request, Response
+from fastapi import APIRouter, Request, Response, BackgroundTasks
+from fastapi_mail import MessageSchema, MessageType
 
 from app.config import settings
 from app.models import Role, User
@@ -10,9 +11,11 @@ from app.schemas.auth import (
     ResetPasswordSchema,
     TokenSchema,
 )
+from app.services.templates import templates
 from app.schemas.user import UserCreateSchema, UserReadSchema
 from app.services.auth import requires
 from app.services.db import dbDep
+from app.services.mail import mail
 from app.services.exceptions import BadRequest, Forbidden, NotFound, Unauthorized
 from app.utils.auth import (
     create_access_token,
@@ -128,14 +131,28 @@ async def logout(request: Request, response: Response):
 
 
 @router.post("/forgot-password/")
-async def forgot_password(request: Request, data: ForgotPasswordSchema, db: dbDep):
+async def forgot_password(
+    request: Request,
+    data: ForgotPasswordSchema,
+    db: dbDep,
+    background_tasks: BackgroundTasks,
+):
     user = User.get_by(db=db, first=True, email=data.email)
     if not user:
         raise BadRequest(message="Email not registered")
     token = create_jwt({"sub": user.uid}, timedelta(minutes=15))
-    # TODO: insert correct email and send email
-    reset_link = f"/?token={token}"
+    reset_link = f"{settings.DOMAIN}/reset-password?token={token}"
 
+    html = templates.get_template("password_reset_email.jinja").render(
+        user_name=user.name, reset_link=reset_link
+    )
+    message = MessageSchema(
+        subject="Ascension - Reset Password",
+        recipients=[user.email],
+        body=html,
+        subtype=MessageType.html,
+    )
+    background_tasks.add_task(mail.send_message, message)
     return {"status": True, "message": "Password reset link sent to email"}
 
 
