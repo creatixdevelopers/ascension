@@ -18,6 +18,11 @@ export default defineNuxtConfig({
     storage: "cookie", // or 'sessionStorage' or 'localStorage'
     storageKey: "theme"
   },
+  app: {
+    head: {
+      link: [{ rel: "icon", type: "image/png", href: "data:," }],
+    }
+  },
   runtimeConfig: {
     public: {
       apiBase: "http://localhost:8000"
