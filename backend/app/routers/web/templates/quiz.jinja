@@ -81,11 +81,12 @@
         <div class="options-group">`;
 
 				options[currentLanguage].forEach((option, i) => {
-					const isChecked = storedValue === i.toString() ? "checked" : "";
+					const value = i + 1;
+					const isChecked = storedValue === value.toString() ? "checked" : "";
 					html += `
 					<div class="form-check">
-						<input class="form-check-input" type="radio" name="q${index}" id="q${index}_${i}" value="${i}" ${isChecked} onchange="saveResponse('${sectionKey}', ${index}, this.value)">
-						<label class="form-check-label" for="q${index}_${i}">
+						<input class="form-check-input" type="radio" name="q${index}" id="q${index}_${value}" value="${value}" ${isChecked} onchange="saveResponse('${sectionKey}', ${index}, this.value)">
+						<label class="form-check-label" for="q${index}_${value}">
 							${option}
 						</label>
 					</div>`;
