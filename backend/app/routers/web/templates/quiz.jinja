@@ -174,7 +174,7 @@
 			let storedData = JSON.parse(localStorage.getItem(quiz_id)) || {};
 
 			// Submit to backend
-			const response = await fetch(`/api/quiz/response`, {
+			const response = await fetch(`/api/quiz/response/`, {
 				method: "PUT",
 				headers: {"Content-Type": "application/json"},
 				body: JSON.stringify({

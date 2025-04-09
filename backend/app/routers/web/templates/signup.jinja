@@ -59,7 +59,7 @@
 											<label for="confirm_password" class="form-label">Confirm Password</label>
 										</div>
 									</div>
-									<div class="col-12">
+									{#<div class="col-12">
 										<div class="form-check">
 											<input class="form-check-input" type="checkbox" required name="terms" id="terms"/>
 											<label class="form-check-label text-secondary" for="terms">
@@ -69,7 +69,7 @@
 												<a href="https://theascension.co" target="_blank">Privacy Policy</a>.
 											</label>
 										</div>
-									</div>
+									</div>#}
 									<div class="col-12">
 										<div class="alert alert-danger d-none" id="errorMessage" role="alert"></div>
 									</div>
@@ -132,11 +132,11 @@
 						errorMessage.text(json.message || 'Signup failed. Please contact support.').removeClass('d-none');
 						return
 					}
-					successMessage.text("Signup successful! You may login now").removeClass('d-none');
+					successMessage.text("Signup successful! You may signin now").removeClass('d-none');
 					form.trigger('reset');
 				} catch (error) {
 					console.error('Error:', error);
-					errorMessage.text('An error occurred during login. Please try again.').removeClass('d-none');
+					errorMessage.text('An error occurred during signin. Please try again.').removeClass('d-none');
 				}
 			});
 		});
