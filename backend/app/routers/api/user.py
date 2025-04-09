@@ -69,7 +69,7 @@ async def _delete(request: Request, uid: str, db: dbDep):
 @router.post("/data-table/", response_model=DataTableResponseSchema[UserReadSchema])
 @requires(["user.read.all"])
 async def _datatable(request: Request, data: DataTableSchema, db: dbDep):
-    query = select(User)
+    query = select(User).where(User.role_id > 1)
     total = db.execute(select(func.count()).select_from(query.subquery())).scalar_one()
 
     if data.search:
