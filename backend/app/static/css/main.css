@@ -740,6 +740,34 @@ section,
   color: #000000;
 }
 
+.btn-custom {
+  padding: 10px 30px 10px 30px;
+  color: #ffffff;
+  background-color: #018fae;
+  border-radius: 10px;
+  border: none;
+  width: 20rem;
+}
+
+.btn-custom:hover {
+  background-color: #93b3cd;
+  color: #000000;
+}
+
+.btn-yellow-custom {
+  padding: 10px 30px 10px 30px;
+  color: #000000;
+  background-color: #f2c063;
+  border-radius: 10px;
+  border: none;
+  width: 20rem;
+}
+
+.btn-yellow-custom:hover {
+  background-color: #f2c063;
+  color: #000000;
+}
+
 .btn-secondary {
   padding: 12px 30px 12px 30px;
 
@@ -794,6 +822,7 @@ body {
 .header-container .form-switch {
   direction: ltr !important;
   text-align: left;
+  justify-content: center;
 }
 
 .progress-container {
@@ -845,6 +874,9 @@ body {
 .cta-buttons {
   text-align: center;
   margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .form-switch {

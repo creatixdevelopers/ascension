@@ -8,12 +8,12 @@
 					<div class="text-center">
 						{% if success %}
 							<i class="bi bi-check-circle-fill text-success" style="font-size: 4rem;"></i>
-							<h3 class="mt-3">Payment Successful</h3>
+							<h3 class="mt-3 text-dark">Payment Successful</h3>
 							<p class="text-muted">Thank you! Your payment was processed successfully.</p>
-							<a href="/home" class="btn btn-success mt-3">Start Quiz</a>
+							<a href="/home" class="btn btn-success mt-3">Start Assessment</a>
 						{% else %}
 							<i class="bi bi-x-circle-fill text-danger" style="font-size: 4rem;"></i>
-							<h3 class="mt-3">Payment Failed</h3>
+							<h3 class="mt-3 text-dark">Payment Failed</h3>
 							<p class="text-muted">Oops! Something went wrong. Your payment was not successful.</p>
 							<a href="/home" class="btn btn-secondary mt-3">Back to Home</a>
 						{% endif %}

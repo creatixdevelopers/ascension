@@ -48,10 +48,9 @@
 		<!-- Feedback Section -->
 		<section id="feedback" class="py-4">
 			<div class="container">
-				<div class="d-flex justify-content-end">
-					<button class="btn btn-primary my-4" onclick="downloadPDF()">Download feedback as PDF</button>
-				</div>
+				
 				<div class="header-container no-pdf">
+					<h4 class="mb-4 text-center">Select Language/اختر اللغة</h4>
 					<div class="form-check form-switch">
 						<input class="form-check-input" type="checkbox" role="switch" id="languageToggle"
 									 onchange="toggleLanguage()"/>
@@ -65,7 +64,7 @@
 
 				<!-- Feedback Section -->
 				<div class="feedback-section">
-					<h3 class="py-5 text-center">Detailed Feedback</h3>
+					<h3 class="py-5" style="color: #f2c063">Your Analysis</h3>
 					<div id="feedbackContent"></div>
 				</div>
 
@@ -83,10 +82,17 @@
 				</table>
 
 				<!-- Call-to-Action Buttons -->
-				<div class="cta-buttons mt-5">
+				<div class="d-flex justify-content-center no-pdf">
+					<h5 class="py-2 mt-4 text-center" style="color: #f2c063">What's Next For Me?</h5>
+				</div>
+				<div class="cta-buttons mt-2 no-pdf">
 					<a href="https://theascension.co/contact-us/" target="_blank">
-						<button class="btn btn-primary mx-2 my-2">Book a Call with Arsalan</button>
+						<button class="btn btn-custom mx-2 my-2">Book a Call with Arsalan</button>
 					</a>
+					<a href="https://theascension.co/contact-us/" target="_blank">
+						<button class="btn btn-custom mx-2 my-2">Subscribe to the newsletter</button>
+					</a>	
+					<a href="javascript:void(0)" class="btn btn-yellow-custom my-4" onclick="downloadPDF()">Download Assessment as PDF</a>
 				</div>
 			</div>
 		</section>
@@ -97,6 +103,18 @@
 {% block scripts %}
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 	<script type="application/javascript">
+		const translations = {
+			en: {
+				low: "Low",
+				medium: "Medium",
+				high: "High"
+			},
+			ar: {
+				low: "منخفض",
+				medium: "متوسط",
+				high: "عالي"
+			}
+		};
 		function downloadPDF() {
 			const element = document.querySelector("main");
 
@@ -197,7 +215,13 @@
         <tr>
 					<td>${translatedPillar}</td>
 					<td>${averageScore}</td>
-					<td>${averageScore >= 4 ? "Low" : averageScore === 3 ? "Medium" : "High"}</td>
+					<td>${
+					averageScore >= 4
+						? translations[currentLanguage].low
+						: averageScore === 3
+						? translations[currentLanguage].medium
+						: translations[currentLanguage].high
+					}</td>
         </tr>`;
 			});
 
